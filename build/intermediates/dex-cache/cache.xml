@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Jansen\Desktop\CornPestApp\app\libs\Vuforia.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bc8f215f7814c3bb08f45cba9659e25db9e5f1e4">
+        <dex dex="C:\Users\Jansen\Desktop\CornPestApp\app\build\intermediates\pre-dexed\debug\Vuforia_cf025c88f468f82042e768da849b724a99abfbd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Jansen\Desktop\VuforiaSamples-6-5-19\app\libs\Vuforia.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bc8f215f7814c3bb08f45cba9659e25db9e5f1e4">
+        <dex dex="C:\Users\Jansen\Desktop\VuforiaSamples-6-5-19\app\build\intermediates\pre-dexed\debug\Vuforia_7576fae7793261af172c5cbe971c136bb995f067.jar" />
+    </item>
+
+</items>

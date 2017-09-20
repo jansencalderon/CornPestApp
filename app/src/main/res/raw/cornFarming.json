@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "cfName": "Developmental Stage",
+    "cfImage": "dev_stage.jpg"
+  },
+  {
+    "id": 2,
+    "cfName": "Root Systems",
+    "cfImage": "root_systems.jpg"
+  },
+  {
+    "id": 3,
+    "cfName": "Production Decisions",
+    "cfImage": "production_decisions.jpg"
+  },
+  {
+    "id": 4,
+    "cfName": "Degree Days",
+    "cfImage": "degree_days.jpg"
+  }
+]

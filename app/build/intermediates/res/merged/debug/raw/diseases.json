@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "disName": "Leaf Spot",
+    "disDesc": "This disease is caused by the fungus Helminthosporium maydis.",
+    "disManagement": "Plant resistant varieties to help reduce occurrence of the disease.",
+    "disSymptoms": "Presence of lesions that vary from small to large elongated or oval tan to brown spots. Under favorable conditions, these lesions coalesce completely burning large areas of the leaves.",
+    "disImage": "leaf_spot.jpg"
+  }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\insects.json",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\raw\\insects.json"
+    },
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\diseases.json",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\raw\\diseases.json"
+    }
+]
