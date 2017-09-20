@@ -8,15 +8,15 @@
         "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_camera_alt_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_info_black_24dp.png",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_info_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_description_black_24dp.png",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_description_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon.png",
         "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon.png"
-    },
-    {
-        "merged": "C:\\Users\\Jansen\\Desktop\\VuforiaSamples-6-5-19\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\logo.png",
-        "source": "C:\\Users\\Jansen\\Desktop\\VuforiaSamples-6-5-19\\app\\src\\main\\res\\drawable-xxhdpi\\logo.png"
-    },
-    {
-        "merged": "C:\\Users\\Jansen\\Desktop\\VuforiaSamples-6-5-19\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon.png",
-        "source": "C:\\Users\\Jansen\\Desktop\\VuforiaSamples-6-5-19\\app\\src\\main\\res\\drawable-xxhdpi\\icon.png"
     }
 ]

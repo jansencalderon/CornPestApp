@@ -63,18 +63,18 @@
         android:theme="@style/AppTheme" >
 
         <!--
-          NOTE: The values in 'android:configChanges' ensure that Android will 
-          not destroy and re-create the activity when the user flips the 
-          keyboard, changes the orientation of the device, or the actual or 
-          physical screen resolution changes, but calls the Activity's 
-          onConfigurationChanged() function instead.
+         NOTE: The values in 'android:configChanges' ensure that Android will
+         not destroy and re-create the activity when the user flips the
+         keyboard, changes the orientation of the device, or the actual or
+         physical screen resolution changes, but calls the Activity's
+         onConfigurationChanged() function instead.
 
-          NOTE 2: In order to prevent automatic reactions to orientation
-          changes in addition to setting proper values for
-          'android:configChanges', you also must explicitly specify the screen
-          orientation used by the application, either by setting the attribute
-          'android:screenOrientation' or in code by calling
-          Activity.setRequestedOrientation().
+         NOTE 2: In order to prevent automatic reactions to orientation
+         changes in addition to setting proper values for
+         'android:configChanges', you also must explicitly specify the screen
+         orientation used by the application, either by setting the attribute
+         'android:screenOrientation' or in code by calling
+         Activity.setRequestedOrientation().
         -->
         <!-- Splash Screen Activity -->
 
@@ -88,81 +88,74 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
--
+            -
         </activity>
-        <activity android:name="com.vuforia.samples.MainApp.MainActivity" >
-        </activity>
+        <activity android:name="com.vuforia.samples.MainApp.MainActivity" />
         <activity android:name="com.vuforia.samples.MainApp.ui.insects.InsectsActivity" />
-        <activity android:name="com.vuforia.samples.MainApp.ui.insects.InsectDetail" />
-        <activity android:name="com.vuforia.samples.MainApp.ui.diseases.DiseaseDetail" />
+        <activity
+            android:name="com.vuforia.samples.MainApp.ui.insects.InsectDetail"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.vuforia.samples.MainApp.ui.diseases.DiseaseDetail"
+            android:launchMode="singleTask" />
         <activity android:name="com.vuforia.samples.MainApp.ui.diseases.DiseasesActivity" />
+        <activity android:name="com.vuforia.samples.MainApp.ui.cornFarming.CornFarmingActivity" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.ui.ActivityList.ActivityLauncher"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:screenOrientation="portrait"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.ui.ActivityList.AboutScreen"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.ImageTargets.ImageTargets"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.VuMark.VuMark"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.TextRecognition.TextReco"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.CylinderTargets.CylinderTargets"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.VirtualButtons.VirtualButtons"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.UserDefinedTargets.UserDefinedTargets"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.MultiTargets.MultiTargets"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.CloudRecognition.CloudReco"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
         <activity
             android:name="com.vuforia.samples.VuforiaSamples.app.ObjectRecognition.ObjectTargets"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask"
-            android:theme="@style/SampleAppsTheme" >
-        </activity>
+            android:theme="@style/SampleAppsTheme" />
     </application>
 
 </manifest>

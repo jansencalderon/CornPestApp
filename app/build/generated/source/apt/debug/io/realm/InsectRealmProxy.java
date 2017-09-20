@@ -41,9 +41,10 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         long insectThresholdIndex;
         long insectManagementIndex;
         long insectImageIndex;
+        long imageRecognitionIndex;
 
         InsectColumnInfo(SharedRealm realm, Table table) {
-            super(8);
+            super(9);
             this.idIndex = addColumnDetails(table, "id", RealmFieldType.INTEGER);
             this.insectNameIndex = addColumnDetails(table, "insectName", RealmFieldType.STRING);
             this.insectDescIndex = addColumnDetails(table, "insectDesc", RealmFieldType.STRING);
@@ -52,6 +53,7 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
             this.insectThresholdIndex = addColumnDetails(table, "insectThreshold", RealmFieldType.STRING);
             this.insectManagementIndex = addColumnDetails(table, "insectManagement", RealmFieldType.STRING);
             this.insectImageIndex = addColumnDetails(table, "insectImage", RealmFieldType.STRING);
+            this.imageRecognitionIndex = addColumnDetails(table, "imageRecognition", RealmFieldType.STRING);
         }
 
         InsectColumnInfo(ColumnInfo src, boolean mutable) {
@@ -76,6 +78,7 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
             dst.insectThresholdIndex = src.insectThresholdIndex;
             dst.insectManagementIndex = src.insectManagementIndex;
             dst.insectImageIndex = src.insectImageIndex;
+            dst.imageRecognitionIndex = src.imageRecognitionIndex;
         }
     }
 
@@ -92,6 +95,7 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         fieldNames.add("insectThreshold");
         fieldNames.add("insectManagement");
         fieldNames.add("insectImage");
+        fieldNames.add("imageRecognition");
         FIELD_NAMES = Collections.unmodifiableList(fieldNames);
     }
 
@@ -344,6 +348,36 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         proxyState.getRow$realm().setString(columnInfo.insectImageIndex, value);
     }
 
+    @Override
+    @SuppressWarnings("cast")
+    public String realmGet$imageRecognition() {
+        proxyState.getRealm$realm().checkIfValid();
+        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.imageRecognitionIndex);
+    }
+
+    @Override
+    public void realmSet$imageRecognition(String value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            final Row row = proxyState.getRow$realm();
+            if (value == null) {
+                row.getTable().setNull(columnInfo.imageRecognitionIndex, row.getIndex(), true);
+                return;
+            }
+            row.getTable().setString(columnInfo.imageRecognitionIndex, row.getIndex(), value, true);
+            return;
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        if (value == null) {
+            proxyState.getRow$realm().setNull(columnInfo.imageRecognitionIndex);
+            return;
+        }
+        proxyState.getRow$realm().setString(columnInfo.imageRecognitionIndex, value);
+    }
+
     public static RealmObjectSchema createRealmObjectSchema(RealmSchema realmSchema) {
         if (!realmSchema.contains("Insect")) {
             RealmObjectSchema realmObjectSchema = realmSchema.create("Insect");
@@ -355,6 +389,7 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
             realmObjectSchema.add("insectThreshold", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
             realmObjectSchema.add("insectManagement", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
             realmObjectSchema.add("insectImage", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
+            realmObjectSchema.add("imageRecognition", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
             return realmObjectSchema;
         }
         return realmSchema.get("Insect");
@@ -366,14 +401,14 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         }
         Table table = sharedRealm.getTable("class_Insect");
         final long columnCount = table.getColumnCount();
-        if (columnCount != 8) {
-            if (columnCount < 8) {
-                throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field count is less than expected - expected 8 but was " + columnCount);
+        if (columnCount != 9) {
+            if (columnCount < 9) {
+                throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field count is less than expected - expected 9 but was " + columnCount);
             }
             if (allowExtraColumns) {
-                RealmLog.debug("Field count is more than expected - expected 8 but was %1$d", columnCount);
+                RealmLog.debug("Field count is more than expected - expected 9 but was %1$d", columnCount);
             } else {
-                throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field count is more than expected - expected 8 but was " + columnCount);
+                throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field count is more than expected - expected 9 but was " + columnCount);
             }
         }
         Map<String, RealmFieldType> columnTypes = new HashMap<String, RealmFieldType>();
@@ -465,6 +500,15 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         }
         if (!table.isColumnNullable(columnInfo.insectImageIndex)) {
             throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field 'insectImage' is required. Either set @Required to field 'insectImage' or migrate using RealmObjectSchema.setNullable().");
+        }
+        if (!columnTypes.containsKey("imageRecognition")) {
+            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Missing field 'imageRecognition' in existing Realm file. Either remove field or migrate using io.realm.internal.Table.addColumn().");
+        }
+        if (columnTypes.get("imageRecognition") != RealmFieldType.STRING) {
+            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Invalid type 'String' for field 'imageRecognition' in existing Realm file.");
+        }
+        if (!table.isColumnNullable(columnInfo.imageRecognitionIndex)) {
+            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field 'imageRecognition' is required. Either set @Required to field 'imageRecognition' or migrate using RealmObjectSchema.setNullable().");
         }
 
         return columnInfo;
@@ -562,6 +606,13 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
                 ((InsectRealmProxyInterface) obj).realmSet$insectImage((String) json.getString("insectImage"));
             }
         }
+        if (json.has("imageRecognition")) {
+            if (json.isNull("imageRecognition")) {
+                ((InsectRealmProxyInterface) obj).realmSet$imageRecognition(null);
+            } else {
+                ((InsectRealmProxyInterface) obj).realmSet$imageRecognition((String) json.getString("imageRecognition"));
+            }
+        }
         return obj;
     }
 
@@ -631,6 +682,13 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
                     ((InsectRealmProxyInterface) obj).realmSet$insectImage(null);
                 } else {
                     ((InsectRealmProxyInterface) obj).realmSet$insectImage((String) reader.nextString());
+                }
+            } else if (name.equals("imageRecognition")) {
+                if (reader.peek() == JsonToken.NULL) {
+                    reader.skipValue();
+                    ((InsectRealmProxyInterface) obj).realmSet$imageRecognition(null);
+                } else {
+                    ((InsectRealmProxyInterface) obj).realmSet$imageRecognition((String) reader.nextString());
                 }
             } else {
                 reader.skipValue();
@@ -704,6 +762,7 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
             ((InsectRealmProxyInterface) realmObject).realmSet$insectThreshold(((InsectRealmProxyInterface) newObject).realmGet$insectThreshold());
             ((InsectRealmProxyInterface) realmObject).realmSet$insectManagement(((InsectRealmProxyInterface) newObject).realmGet$insectManagement());
             ((InsectRealmProxyInterface) realmObject).realmSet$insectImage(((InsectRealmProxyInterface) newObject).realmGet$insectImage());
+            ((InsectRealmProxyInterface) realmObject).realmSet$imageRecognition(((InsectRealmProxyInterface) newObject).realmGet$imageRecognition());
             return realmObject;
         }
     }
@@ -756,6 +815,10 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         String realmGet$insectImage = ((InsectRealmProxyInterface)object).realmGet$insectImage();
         if (realmGet$insectImage != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.insectImageIndex, rowIndex, realmGet$insectImage, false);
+        }
+        String realmGet$imageRecognition = ((InsectRealmProxyInterface)object).realmGet$imageRecognition();
+        if (realmGet$imageRecognition != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, realmGet$imageRecognition, false);
         }
         return rowIndex;
     }
@@ -813,6 +876,10 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
                 String realmGet$insectImage = ((InsectRealmProxyInterface)object).realmGet$insectImage();
                 if (realmGet$insectImage != null) {
                     Table.nativeSetString(tableNativePtr, columnInfo.insectImageIndex, rowIndex, realmGet$insectImage, false);
+                }
+                String realmGet$imageRecognition = ((InsectRealmProxyInterface)object).realmGet$imageRecognition();
+                if (realmGet$imageRecognition != null) {
+                    Table.nativeSetString(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, realmGet$imageRecognition, false);
                 }
             }
         }
@@ -878,6 +945,12 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
             Table.nativeSetString(tableNativePtr, columnInfo.insectImageIndex, rowIndex, realmGet$insectImage, false);
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.insectImageIndex, rowIndex, false);
+        }
+        String realmGet$imageRecognition = ((InsectRealmProxyInterface)object).realmGet$imageRecognition();
+        if (realmGet$imageRecognition != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, realmGet$imageRecognition, false);
+        } else {
+            Table.nativeSetNull(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, false);
         }
         return rowIndex;
     }
@@ -948,6 +1021,12 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
                 } else {
                     Table.nativeSetNull(tableNativePtr, columnInfo.insectImageIndex, rowIndex, false);
                 }
+                String realmGet$imageRecognition = ((InsectRealmProxyInterface)object).realmGet$imageRecognition();
+                if (realmGet$imageRecognition != null) {
+                    Table.nativeSetString(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, realmGet$imageRecognition, false);
+                } else {
+                    Table.nativeSetNull(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, false);
+                }
             }
         }
     }
@@ -978,6 +1057,7 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         ((InsectRealmProxyInterface) unmanagedObject).realmSet$insectThreshold(((InsectRealmProxyInterface) realmObject).realmGet$insectThreshold());
         ((InsectRealmProxyInterface) unmanagedObject).realmSet$insectManagement(((InsectRealmProxyInterface) realmObject).realmGet$insectManagement());
         ((InsectRealmProxyInterface) unmanagedObject).realmSet$insectImage(((InsectRealmProxyInterface) realmObject).realmGet$insectImage());
+        ((InsectRealmProxyInterface) unmanagedObject).realmSet$imageRecognition(((InsectRealmProxyInterface) realmObject).realmGet$imageRecognition());
         return unmanagedObject;
     }
 
@@ -989,6 +1069,7 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         ((InsectRealmProxyInterface) realmObject).realmSet$insectThreshold(((InsectRealmProxyInterface) newObject).realmGet$insectThreshold());
         ((InsectRealmProxyInterface) realmObject).realmSet$insectManagement(((InsectRealmProxyInterface) newObject).realmGet$insectManagement());
         ((InsectRealmProxyInterface) realmObject).realmSet$insectImage(((InsectRealmProxyInterface) newObject).realmGet$insectImage());
+        ((InsectRealmProxyInterface) realmObject).realmSet$imageRecognition(((InsectRealmProxyInterface) newObject).realmGet$imageRecognition());
         return realmObject;
     }
 
@@ -1029,6 +1110,10 @@ public class InsectRealmProxy extends com.vuforia.samples.MainApp.model.Insect
         stringBuilder.append(",");
         stringBuilder.append("{insectImage:");
         stringBuilder.append(realmGet$insectImage() != null ? realmGet$insectImage() : "null");
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{imageRecognition:");
+        stringBuilder.append(realmGet$imageRecognition() != null ? realmGet$imageRecognition() : "null");
         stringBuilder.append("}");
         stringBuilder.append("]");
         return stringBuilder.toString();

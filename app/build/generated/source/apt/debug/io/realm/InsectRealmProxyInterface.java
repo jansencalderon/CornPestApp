@@ -18,4 +18,6 @@ public interface InsectRealmProxyInterface {
     public void realmSet$insectManagement(String value);
     public String realmGet$insectImage();
     public void realmSet$insectImage(String value);
+    public String realmGet$imageRecognition();
+    public void realmSet$imageRecognition(String value);
 }

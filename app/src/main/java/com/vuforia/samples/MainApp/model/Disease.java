@@ -15,7 +15,7 @@ public class Disease extends RealmObject {
     private String disManagement;
     private String disSymptoms;
     private String disImage;
-    private String disImageRecog;
+    private String imageRecognition;
 
     public int getId() {
         return id;
@@ -65,11 +65,11 @@ public class Disease extends RealmObject {
         this.disImage = disImage;
     }
 
-    public String getDisImageRecog() {
-        return disImageRecog;
+    public String getImageRecognition() {
+        return imageRecognition;
     }
 
-    public void setDisImageRecog(String disImageRecog) {
-        this.disImageRecog = disImageRecog;
+    public void setImageRecognition(String imageRecognition) {
+        this.imageRecognition = imageRecognition;
     }
 }

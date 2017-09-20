@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.vuforia.samples.MainApp.ui.cornFarming.CornFarmingActivity;
 import com.vuforia.samples.MainApp.ui.diseases.DiseasesActivity;
 import com.vuforia.samples.MainApp.ui.insects.InsectsActivity;
 import com.vuforia.samples.VuforiaSamples.R;
@@ -30,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, DiseasesActivity.class));
+            }
+        });
+
+        binding.goToCornFarming.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CornFarmingActivity.class));
             }
         });
 

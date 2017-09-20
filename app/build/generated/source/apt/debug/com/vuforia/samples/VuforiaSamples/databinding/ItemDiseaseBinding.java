@@ -18,7 +18,7 @@ public class ItemDiseaseBinding extends android.databinding.ViewDataBinding impl
     // variables
     private com.vuforia.samples.MainApp.model.Disease mItem;
     private com.vuforia.samples.MainApp.ui.diseases.DiseasesView mView;
-    private final android.view.View.OnClickListener mCallback2;
+    private final android.view.View.OnClickListener mCallback3;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -33,7 +33,7 @@ public class ItemDiseaseBinding extends android.databinding.ViewDataBinding impl
         this.mboundView1.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback2 = new android.databinding.generated.callback.OnClickListener(this, 1);
+        mCallback3 = new android.databinding.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -121,7 +121,7 @@ public class ItemDiseaseBinding extends android.databinding.ViewDataBinding impl
         if ((dirtyFlags & 0x4L) != 0) {
             // api target 1
 
-            this.mboundView0.setOnClickListener(mCallback2);
+            this.mboundView0.setOnClickListener(mCallback3);
         }
         if ((dirtyFlags & 0x5L) != 0) {
             // api target 1

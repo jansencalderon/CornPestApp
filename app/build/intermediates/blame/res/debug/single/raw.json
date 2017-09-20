@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\corn_farming.json",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\raw\\corn_farming.json"
+    },
+    {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\insects.json",
         "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\raw\\insects.json"
     },

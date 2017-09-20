@@ -9,15 +9,23 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.goToInsects, 1);
-        sViewsWithIds.put(R.id.goToDiseases, 2);
-        sViewsWithIds.put(R.id.fab, 3);
+        sViewsWithIds.put(R.id.toolbar, 1);
+        sViewsWithIds.put(R.id.goToCornFarming, 2);
+        sViewsWithIds.put(R.id.goToInsects, 3);
+        sViewsWithIds.put(R.id.imageView2, 4);
+        sViewsWithIds.put(R.id.goToDiseases, 5);
+        sViewsWithIds.put(R.id.imageView3, 6);
+        sViewsWithIds.put(R.id.fab, 7);
     }
     // views
     public final android.support.design.widget.FloatingActionButton fab;
-    public final android.widget.LinearLayout goToDiseases;
+    public final android.support.v7.widget.CardView goToCornFarming;
+    public final android.support.v7.widget.CardView goToDiseases;
     public final android.support.v7.widget.CardView goToInsects;
-    private final android.widget.FrameLayout mboundView0;
+    public final android.widget.ImageView imageView2;
+    public final android.widget.ImageView imageView3;
+    private final android.widget.RelativeLayout mboundView0;
+    public final android.support.v7.widget.Toolbar toolbar;
     // variables
     // values
     // listeners
@@ -25,12 +33,16 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
 
     public ActivityMainBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds);
-        this.fab = (android.support.design.widget.FloatingActionButton) bindings[3];
-        this.goToDiseases = (android.widget.LinearLayout) bindings[2];
-        this.goToInsects = (android.support.v7.widget.CardView) bindings[1];
-        this.mboundView0 = (android.widget.FrameLayout) bindings[0];
+        final Object[] bindings = mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds);
+        this.fab = (android.support.design.widget.FloatingActionButton) bindings[7];
+        this.goToCornFarming = (android.support.v7.widget.CardView) bindings[2];
+        this.goToDiseases = (android.support.v7.widget.CardView) bindings[5];
+        this.goToInsects = (android.support.v7.widget.CardView) bindings[3];
+        this.imageView2 = (android.widget.ImageView) bindings[4];
+        this.imageView3 = (android.widget.ImageView) bindings[6];
+        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
+        this.toolbar = (android.support.v7.widget.Toolbar) bindings[1];
         setRootTag(root);
         // listeners
         invalidateAll();

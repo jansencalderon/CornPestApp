@@ -18,7 +18,7 @@ public class Insect extends RealmObject {
     private String insectThreshold;
     private String insectManagement;
     private String insectImage;
-    private String disImageRecog;
+    private String imageRecognition;
 
     public Integer getId() {
         return id;
@@ -84,11 +84,11 @@ public class Insect extends RealmObject {
         this.insectImage = insectImage;
     }
 
-    public String getDisImageRecog() {
-        return disImageRecog;
+    public String getImageRecognition() {
+        return imageRecognition;
     }
 
-    public void setDisImageRecog(String disImageRecog) {
-        this.disImageRecog = disImageRecog;
+    public void setImageRecognition(String imageRecognition) {
+        this.imageRecognition = imageRecognition;
     }
 }

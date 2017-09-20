@@ -9,14 +9,16 @@ public class ActivityDiseaseDetailBinding extends android.databinding.ViewDataBi
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.app_bar, 4);
-        sViewsWithIds.put(R.id.imageView, 5);
+        sViewsWithIds.put(R.id.app_bar, 6);
+        sViewsWithIds.put(R.id.imageView, 7);
     }
     // views
     public final android.support.design.widget.AppBarLayout appBar;
     public final android.widget.ImageView imageView;
     private final android.support.design.widget.CoordinatorLayout mboundView0;
     private final android.widget.TextView mboundView3;
+    private final android.widget.TextView mboundView4;
+    private final android.widget.TextView mboundView5;
     public final android.support.v7.widget.Toolbar toolbar;
     public final android.support.design.widget.CollapsingToolbarLayout toolbarLayout;
     // variables
@@ -27,13 +29,17 @@ public class ActivityDiseaseDetailBinding extends android.databinding.ViewDataBi
 
     public ActivityDiseaseDetailBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds);
-        this.appBar = (android.support.design.widget.AppBarLayout) bindings[4];
-        this.imageView = (android.widget.ImageView) bindings[5];
+        final Object[] bindings = mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds);
+        this.appBar = (android.support.design.widget.AppBarLayout) bindings[6];
+        this.imageView = (android.widget.ImageView) bindings[7];
         this.mboundView0 = (android.support.design.widget.CoordinatorLayout) bindings[0];
         this.mboundView0.setTag(null);
         this.mboundView3 = (android.widget.TextView) bindings[3];
         this.mboundView3.setTag(null);
+        this.mboundView4 = (android.widget.TextView) bindings[4];
+        this.mboundView4.setTag(null);
+        this.mboundView5 = (android.widget.TextView) bindings[5];
+        this.mboundView5.setTag(null);
         this.toolbar = (android.support.v7.widget.Toolbar) bindings[2];
         this.toolbar.setTag(null);
         this.toolbarLayout = (android.support.design.widget.CollapsingToolbarLayout) bindings[1];
@@ -98,6 +104,8 @@ public class ActivityDiseaseDetailBinding extends android.databinding.ViewDataBi
         }
         com.vuforia.samples.MainApp.model.Disease item = mItem;
         java.lang.String itemDisDesc = null;
+        java.lang.String itemDisSymptoms = null;
+        java.lang.String itemDisManagement = null;
         java.lang.String itemDisName = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
@@ -107,6 +115,10 @@ public class ActivityDiseaseDetailBinding extends android.databinding.ViewDataBi
                 if (item != null) {
                     // read item.disDesc
                     itemDisDesc = item.getDisDesc();
+                    // read item.disSymptoms
+                    itemDisSymptoms = item.getDisSymptoms();
+                    // read item.disManagement
+                    itemDisManagement = item.getDisManagement();
                     // read item.disName
                     itemDisName = item.getDisName();
                 }
@@ -116,6 +128,8 @@ public class ActivityDiseaseDetailBinding extends android.databinding.ViewDataBi
             // api target 1
 
             android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView3, itemDisDesc);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, itemDisSymptoms);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, itemDisManagement);
             this.toolbar.setTitle(itemDisName);
             this.toolbarLayout.setTitle(itemDisName);
         }

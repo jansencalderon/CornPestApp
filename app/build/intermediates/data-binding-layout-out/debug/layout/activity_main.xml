@@ -3,131 +3,196 @@
                                                        
                                                    
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
-        <LinearLayout
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"
-            tools:context="com.tip.capstone.cprapp.MainActivity">
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="@mipmap/ic_launcher"
+            app:title="CPR App"
+            app:titleTextColor="@color/white" />
 
-            <android.support.v7.widget.CardView
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardElevation="0dp">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="6dp">
 
-                <LinearLayout
+                <android.support.v7.widget.CardView
+                    android:id="@+id/goToCornFarming"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp">
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
 
-                    <TextView
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Corn Farming"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+                        android:layout_height="wrap_content">
 
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/menu_corn_farming" />
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/goToInsects"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:foreground="?selectableItemBackground"
-                app:cardElevation="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Corn Farming"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                            android:textColor="@color/white" />
 
-                <LinearLayout
+                    </FrameLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/goToInsects"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp">
+                    android:layout_marginTop="6dp"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
 
-                    <TextView
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Insects"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+                        android:layout_height="wrap_content">
 
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:foreground="?selectableItemBackground"
-                app:cardElevation="0dp">
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/menu_insects" />
 
-                <LinearLayout
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Insects"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                            android:textColor="@color/white" />
+                    </FrameLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
                     android:id="@+id/goToDiseases"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp">
+                    android:layout_marginTop="6dp"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
 
-                    <TextView
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/menu_diseases" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Diseases"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                            android:textColor="@color/white" />
+
+                    </FrameLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="367dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="6dp"
+                    app:cardElevation="0dp"
+                    android:foreground="?selectableItemBackground">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Diseases"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_description_black_24dp"
+                            android:tint="@color/colorPrimary" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:foreground="?selectableItemBackground"
-                app:cardElevation="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="How to use the App"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/colorPrimary" />
 
-                <LinearLayout
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp">
+                    android:layout_marginTop="6dp"
+                    app:cardElevation="0dp"
+                    android:foreground="?selectableItemBackground">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="How to use the App"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_info_black_24dp"
+                            android:tint="@color/colorPrimary" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:foreground="?selectableItemBackground"
-                app:cardElevation="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="About the App"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/colorPrimary" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="16dp">
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="About the App"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-        </LinearLayout>
         <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            app:fabSize="auto"
-            android:layout_margin="16dp"
             android:id="@+id/fab"
-            android:tint="@color/white"
-            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
             android:layout_gravity="bottom|end"
-            android:layout_height="wrap_content" />
-    </FrameLayout>
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:tint="@color/white"
+            app:fabSize="auto" />
+    </RelativeLayout>
          

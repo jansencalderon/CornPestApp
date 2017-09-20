@@ -3,6 +3,7 @@ package com.vuforia.samples.MainApp.app;
 import android.app.Application;
 
 import com.vuforia.samples.MainApp.helper.StringHelper;
+import com.vuforia.samples.MainApp.model.CornFarming;
 import com.vuforia.samples.MainApp.model.Disease;
 import com.vuforia.samples.MainApp.model.Insect;
 import com.vuforia.samples.VuforiaSamples.R;
@@ -32,6 +33,8 @@ public class App extends Application {
                 realm.deleteAll();
                 realm.createAllFromJson(Insect.class, StringHelper.readRawTextFile(getApplicationContext(), R.raw.insects));
                 realm.createAllFromJson(Disease.class, StringHelper.readRawTextFile(getApplicationContext(), R.raw.diseases));
+                realm.createAllFromJson(CornFarming.class, StringHelper.readRawTextFile(getApplicationContext(), R.raw.corn_farming));
+
             }
         }, new Realm.Transaction.OnSuccess() {
             @Override

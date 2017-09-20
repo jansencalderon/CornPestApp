@@ -9,14 +9,18 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.app_bar, 4);
-        sViewsWithIds.put(R.id.imageView, 5);
+        sViewsWithIds.put(R.id.app_bar, 8);
+        sViewsWithIds.put(R.id.imageView, 9);
     }
     // views
     public final android.support.design.widget.AppBarLayout appBar;
     public final android.widget.ImageView imageView;
     private final android.support.design.widget.CoordinatorLayout mboundView0;
     private final android.widget.TextView mboundView3;
+    private final android.widget.TextView mboundView4;
+    private final android.widget.TextView mboundView5;
+    private final android.widget.TextView mboundView6;
+    private final android.widget.TextView mboundView7;
     public final android.support.v7.widget.Toolbar toolbar;
     public final android.support.design.widget.CollapsingToolbarLayout toolbarLayout;
     // variables
@@ -27,13 +31,21 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
 
     public ActivityInsectDetailBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds);
-        this.appBar = (android.support.design.widget.AppBarLayout) bindings[4];
-        this.imageView = (android.widget.ImageView) bindings[5];
+        final Object[] bindings = mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds);
+        this.appBar = (android.support.design.widget.AppBarLayout) bindings[8];
+        this.imageView = (android.widget.ImageView) bindings[9];
         this.mboundView0 = (android.support.design.widget.CoordinatorLayout) bindings[0];
         this.mboundView0.setTag(null);
         this.mboundView3 = (android.widget.TextView) bindings[3];
         this.mboundView3.setTag(null);
+        this.mboundView4 = (android.widget.TextView) bindings[4];
+        this.mboundView4.setTag(null);
+        this.mboundView5 = (android.widget.TextView) bindings[5];
+        this.mboundView5.setTag(null);
+        this.mboundView6 = (android.widget.TextView) bindings[6];
+        this.mboundView6.setTag(null);
+        this.mboundView7 = (android.widget.TextView) bindings[7];
+        this.mboundView7.setTag(null);
         this.toolbar = (android.support.v7.widget.Toolbar) bindings[2];
         this.toolbar.setTag(null);
         this.toolbarLayout = (android.support.design.widget.CollapsingToolbarLayout) bindings[1];
@@ -97,7 +109,11 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
             mDirtyFlags = 0;
         }
         com.vuforia.samples.MainApp.model.Insect item = mItem;
+        java.lang.String itemInsectSampling = null;
         java.lang.String itemInsectName = null;
+        java.lang.String itemInsectTime = null;
+        java.lang.String itemInsectThreshold = null;
+        java.lang.String itemInsectManagement = null;
         java.lang.String itemInsectDesc = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
@@ -105,8 +121,16 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
 
 
                 if (item != null) {
+                    // read item.insectSampling
+                    itemInsectSampling = item.getInsectSampling();
                     // read item.insectName
                     itemInsectName = item.getInsectName();
+                    // read item.insectTime
+                    itemInsectTime = item.getInsectTime();
+                    // read item.insectThreshold
+                    itemInsectThreshold = item.getInsectThreshold();
+                    // read item.insectManagement
+                    itemInsectManagement = item.getInsectManagement();
                     // read item.insectDesc
                     itemInsectDesc = item.getInsectDesc();
                 }
@@ -116,6 +140,10 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
             // api target 1
 
             android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView3, itemInsectDesc);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, itemInsectTime);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, itemInsectSampling);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView6, itemInsectThreshold);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView7, itemInsectManagement);
             this.toolbar.setTitle(itemInsectName);
             this.toolbarLayout.setTitle(itemInsectName);
         }

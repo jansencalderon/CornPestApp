@@ -11,16 +11,24 @@ class DataBinderMapper  {
                     return com.vuforia.samples.VuforiaSamples.databinding.ItemInsectBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_main:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityMainBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.dialog_result:
+                    return com.vuforia.samples.VuforiaSamples.databinding.DialogResultBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.item_corn_farming:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ItemCornFarmingBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_disease_detail:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityDiseaseDetailBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_disease:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityDiseaseBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.camera_overlay:
+                    return com.vuforia.samples.VuforiaSamples.databinding.CameraOverlayBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_insect_detail:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityInsectDetailBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_insects:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityInsectsBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.item_disease:
                     return com.vuforia.samples.VuforiaSamples.databinding.ItemDiseaseBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.activity_corn_farming:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ActivityCornFarmingBinding.bind(view, bindingComponent);
         }
         return null;
     }
@@ -47,6 +55,18 @@ class DataBinderMapper  {
                 }
                 break;
             }
+            case 579274944: {
+                if(tag.equals("layout/dialog_result_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.dialog_result;
+                }
+                break;
+            }
+            case 288713997: {
+                if(tag.equals("layout/item_corn_farming_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.item_corn_farming;
+                }
+                break;
+            }
             case 608488368: {
                 if(tag.equals("layout/activity_disease_detail_0")) {
                     return com.vuforia.samples.VuforiaSamples.R.layout.activity_disease_detail;
@@ -56,6 +76,12 @@ class DataBinderMapper  {
             case 1295218690: {
                 if(tag.equals("layout/activity_disease_0")) {
                     return com.vuforia.samples.VuforiaSamples.R.layout.activity_disease;
+                }
+                break;
+            }
+            case 1742639020: {
+                if(tag.equals("layout/camera_overlay_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.camera_overlay;
                 }
                 break;
             }
@@ -74,6 +100,12 @@ class DataBinderMapper  {
             case -518122106: {
                 if(tag.equals("layout/item_disease_0")) {
                     return com.vuforia.samples.VuforiaSamples.R.layout.item_disease;
+                }
+                break;
+            }
+            case -121227247: {
+                if(tag.equals("layout/activity_corn_farming_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.activity_corn_farming;
                 }
                 break;
             }

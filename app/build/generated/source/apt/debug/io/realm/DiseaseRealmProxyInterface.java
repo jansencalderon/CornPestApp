@@ -14,4 +14,6 @@ public interface DiseaseRealmProxyInterface {
     public void realmSet$disSymptoms(String value);
     public String realmGet$disImage();
     public void realmSet$disImage(String value);
+    public String realmGet$imageRecognition();
+    public void realmSet$imageRecognition(String value);
 }

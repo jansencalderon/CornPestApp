@@ -4,8 +4,16 @@
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\986761d244a710aa64ce13d9a0990d994dab00bb\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     },
     {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_info_black_24dp.xml",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_info_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_camera_alt_black_24dp.xml",
         "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_camera_alt_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_description_black_24dp.xml",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_description_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",

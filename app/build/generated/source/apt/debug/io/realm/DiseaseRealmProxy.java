@@ -39,15 +39,17 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         long disManagementIndex;
         long disSymptomsIndex;
         long disImageIndex;
+        long imageRecognitionIndex;
 
         DiseaseColumnInfo(SharedRealm realm, Table table) {
-            super(6);
+            super(7);
             this.idIndex = addColumnDetails(table, "id", RealmFieldType.INTEGER);
             this.disNameIndex = addColumnDetails(table, "disName", RealmFieldType.STRING);
             this.disDescIndex = addColumnDetails(table, "disDesc", RealmFieldType.STRING);
             this.disManagementIndex = addColumnDetails(table, "disManagement", RealmFieldType.STRING);
             this.disSymptomsIndex = addColumnDetails(table, "disSymptoms", RealmFieldType.STRING);
             this.disImageIndex = addColumnDetails(table, "disImage", RealmFieldType.STRING);
+            this.imageRecognitionIndex = addColumnDetails(table, "imageRecognition", RealmFieldType.STRING);
         }
 
         DiseaseColumnInfo(ColumnInfo src, boolean mutable) {
@@ -70,6 +72,7 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
             dst.disManagementIndex = src.disManagementIndex;
             dst.disSymptomsIndex = src.disSymptomsIndex;
             dst.disImageIndex = src.disImageIndex;
+            dst.imageRecognitionIndex = src.imageRecognitionIndex;
         }
     }
 
@@ -84,6 +87,7 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         fieldNames.add("disManagement");
         fieldNames.add("disSymptoms");
         fieldNames.add("disImage");
+        fieldNames.add("imageRecognition");
         FIELD_NAMES = Collections.unmodifiableList(fieldNames);
     }
 
@@ -273,6 +277,36 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         proxyState.getRow$realm().setString(columnInfo.disImageIndex, value);
     }
 
+    @Override
+    @SuppressWarnings("cast")
+    public String realmGet$imageRecognition() {
+        proxyState.getRealm$realm().checkIfValid();
+        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.imageRecognitionIndex);
+    }
+
+    @Override
+    public void realmSet$imageRecognition(String value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            final Row row = proxyState.getRow$realm();
+            if (value == null) {
+                row.getTable().setNull(columnInfo.imageRecognitionIndex, row.getIndex(), true);
+                return;
+            }
+            row.getTable().setString(columnInfo.imageRecognitionIndex, row.getIndex(), value, true);
+            return;
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        if (value == null) {
+            proxyState.getRow$realm().setNull(columnInfo.imageRecognitionIndex);
+            return;
+        }
+        proxyState.getRow$realm().setString(columnInfo.imageRecognitionIndex, value);
+    }
+
     public static RealmObjectSchema createRealmObjectSchema(RealmSchema realmSchema) {
         if (!realmSchema.contains("Disease")) {
             RealmObjectSchema realmObjectSchema = realmSchema.create("Disease");
@@ -282,6 +316,7 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
             realmObjectSchema.add("disManagement", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
             realmObjectSchema.add("disSymptoms", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
             realmObjectSchema.add("disImage", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
+            realmObjectSchema.add("imageRecognition", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
             return realmObjectSchema;
         }
         return realmSchema.get("Disease");
@@ -293,14 +328,14 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         }
         Table table = sharedRealm.getTable("class_Disease");
         final long columnCount = table.getColumnCount();
-        if (columnCount != 6) {
-            if (columnCount < 6) {
-                throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field count is less than expected - expected 6 but was " + columnCount);
+        if (columnCount != 7) {
+            if (columnCount < 7) {
+                throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field count is less than expected - expected 7 but was " + columnCount);
             }
             if (allowExtraColumns) {
-                RealmLog.debug("Field count is more than expected - expected 6 but was %1$d", columnCount);
+                RealmLog.debug("Field count is more than expected - expected 7 but was %1$d", columnCount);
             } else {
-                throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field count is more than expected - expected 6 but was " + columnCount);
+                throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field count is more than expected - expected 7 but was " + columnCount);
             }
         }
         Map<String, RealmFieldType> columnTypes = new HashMap<String, RealmFieldType>();
@@ -374,6 +409,15 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         }
         if (!table.isColumnNullable(columnInfo.disImageIndex)) {
             throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field 'disImage' is required. Either set @Required to field 'disImage' or migrate using RealmObjectSchema.setNullable().");
+        }
+        if (!columnTypes.containsKey("imageRecognition")) {
+            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Missing field 'imageRecognition' in existing Realm file. Either remove field or migrate using io.realm.internal.Table.addColumn().");
+        }
+        if (columnTypes.get("imageRecognition") != RealmFieldType.STRING) {
+            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Invalid type 'String' for field 'imageRecognition' in existing Realm file.");
+        }
+        if (!table.isColumnNullable(columnInfo.imageRecognitionIndex)) {
+            throw new RealmMigrationNeededException(sharedRealm.getPath(), "Field 'imageRecognition' is required. Either set @Required to field 'imageRecognition' or migrate using RealmObjectSchema.setNullable().");
         }
 
         return columnInfo;
@@ -455,6 +499,13 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
                 ((DiseaseRealmProxyInterface) obj).realmSet$disImage((String) json.getString("disImage"));
             }
         }
+        if (json.has("imageRecognition")) {
+            if (json.isNull("imageRecognition")) {
+                ((DiseaseRealmProxyInterface) obj).realmSet$imageRecognition(null);
+            } else {
+                ((DiseaseRealmProxyInterface) obj).realmSet$imageRecognition((String) json.getString("imageRecognition"));
+            }
+        }
         return obj;
     }
 
@@ -510,6 +561,13 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
                     ((DiseaseRealmProxyInterface) obj).realmSet$disImage(null);
                 } else {
                     ((DiseaseRealmProxyInterface) obj).realmSet$disImage((String) reader.nextString());
+                }
+            } else if (name.equals("imageRecognition")) {
+                if (reader.peek() == JsonToken.NULL) {
+                    reader.skipValue();
+                    ((DiseaseRealmProxyInterface) obj).realmSet$imageRecognition(null);
+                } else {
+                    ((DiseaseRealmProxyInterface) obj).realmSet$imageRecognition((String) reader.nextString());
                 }
             } else {
                 reader.skipValue();
@@ -575,6 +633,7 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
             ((DiseaseRealmProxyInterface) realmObject).realmSet$disManagement(((DiseaseRealmProxyInterface) newObject).realmGet$disManagement());
             ((DiseaseRealmProxyInterface) realmObject).realmSet$disSymptoms(((DiseaseRealmProxyInterface) newObject).realmGet$disSymptoms());
             ((DiseaseRealmProxyInterface) realmObject).realmSet$disImage(((DiseaseRealmProxyInterface) newObject).realmGet$disImage());
+            ((DiseaseRealmProxyInterface) realmObject).realmSet$imageRecognition(((DiseaseRealmProxyInterface) newObject).realmGet$imageRecognition());
             return realmObject;
         }
     }
@@ -617,6 +676,10 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         String realmGet$disImage = ((DiseaseRealmProxyInterface)object).realmGet$disImage();
         if (realmGet$disImage != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.disImageIndex, rowIndex, realmGet$disImage, false);
+        }
+        String realmGet$imageRecognition = ((DiseaseRealmProxyInterface)object).realmGet$imageRecognition();
+        if (realmGet$imageRecognition != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, realmGet$imageRecognition, false);
         }
         return rowIndex;
     }
@@ -664,6 +727,10 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
                 String realmGet$disImage = ((DiseaseRealmProxyInterface)object).realmGet$disImage();
                 if (realmGet$disImage != null) {
                     Table.nativeSetString(tableNativePtr, columnInfo.disImageIndex, rowIndex, realmGet$disImage, false);
+                }
+                String realmGet$imageRecognition = ((DiseaseRealmProxyInterface)object).realmGet$imageRecognition();
+                if (realmGet$imageRecognition != null) {
+                    Table.nativeSetString(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, realmGet$imageRecognition, false);
                 }
             }
         }
@@ -715,6 +782,12 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
             Table.nativeSetString(tableNativePtr, columnInfo.disImageIndex, rowIndex, realmGet$disImage, false);
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.disImageIndex, rowIndex, false);
+        }
+        String realmGet$imageRecognition = ((DiseaseRealmProxyInterface)object).realmGet$imageRecognition();
+        if (realmGet$imageRecognition != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, realmGet$imageRecognition, false);
+        } else {
+            Table.nativeSetNull(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, false);
         }
         return rowIndex;
     }
@@ -771,6 +844,12 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
                 } else {
                     Table.nativeSetNull(tableNativePtr, columnInfo.disImageIndex, rowIndex, false);
                 }
+                String realmGet$imageRecognition = ((DiseaseRealmProxyInterface)object).realmGet$imageRecognition();
+                if (realmGet$imageRecognition != null) {
+                    Table.nativeSetString(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, realmGet$imageRecognition, false);
+                } else {
+                    Table.nativeSetNull(tableNativePtr, columnInfo.imageRecognitionIndex, rowIndex, false);
+                }
             }
         }
     }
@@ -799,6 +878,7 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         ((DiseaseRealmProxyInterface) unmanagedObject).realmSet$disManagement(((DiseaseRealmProxyInterface) realmObject).realmGet$disManagement());
         ((DiseaseRealmProxyInterface) unmanagedObject).realmSet$disSymptoms(((DiseaseRealmProxyInterface) realmObject).realmGet$disSymptoms());
         ((DiseaseRealmProxyInterface) unmanagedObject).realmSet$disImage(((DiseaseRealmProxyInterface) realmObject).realmGet$disImage());
+        ((DiseaseRealmProxyInterface) unmanagedObject).realmSet$imageRecognition(((DiseaseRealmProxyInterface) realmObject).realmGet$imageRecognition());
         return unmanagedObject;
     }
 
@@ -808,6 +888,7 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         ((DiseaseRealmProxyInterface) realmObject).realmSet$disManagement(((DiseaseRealmProxyInterface) newObject).realmGet$disManagement());
         ((DiseaseRealmProxyInterface) realmObject).realmSet$disSymptoms(((DiseaseRealmProxyInterface) newObject).realmGet$disSymptoms());
         ((DiseaseRealmProxyInterface) realmObject).realmSet$disImage(((DiseaseRealmProxyInterface) newObject).realmGet$disImage());
+        ((DiseaseRealmProxyInterface) realmObject).realmSet$imageRecognition(((DiseaseRealmProxyInterface) newObject).realmGet$imageRecognition());
         return realmObject;
     }
 
@@ -840,6 +921,10 @@ public class DiseaseRealmProxy extends com.vuforia.samples.MainApp.model.Disease
         stringBuilder.append(",");
         stringBuilder.append("{disImage:");
         stringBuilder.append(realmGet$disImage() != null ? realmGet$disImage() : "null");
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{imageRecognition:");
+        stringBuilder.append(realmGet$imageRecognition() != null ? realmGet$imageRecognition() : "null");
         stringBuilder.append("}");
         stringBuilder.append("]");
         return stringBuilder.toString();

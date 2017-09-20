@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Jansen\\Desktop\\VuforiaSamples-6-5-19\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bottom_down.xml",
-        "source": "C:\\Users\\Jansen\\Desktop\\VuforiaSamples-6-5-19\\app\\src\\main\\res\\anim\\bottom_down.xml"
-    },
-    {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\986761d244a710aa64ce13d9a0990d994dab00bb\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
@@ -50,10 +46,6 @@
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\986761d244a710aa64ce13d9a0990d994dab00bb\\output\\res\\anim\\design_snackbar_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jansen\\Desktop\\VuforiaSamples-6-5-19\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bottom_up.xml",
-        "source": "C:\\Users\\Jansen\\Desktop\\VuforiaSamples-6-5-19\\app\\src\\main\\res\\anim\\bottom_up.xml"
     },
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
