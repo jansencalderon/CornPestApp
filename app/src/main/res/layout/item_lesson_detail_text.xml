@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+        name="view"
+        type="com.vuforia.samples.MainApp.ui.cornFarming.details.CornFarmingDetailsView" />
+
+        <variable
+            name="detail"
+            type="com.vuforia.samples.MainApp.model.CornFarmingDetail" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/layout_lesson_detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_body"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{detail.content}"
+            android:textStyle="normal"
+            android:textColor="@color/darkGray"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</layout>

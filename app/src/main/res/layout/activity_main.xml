@@ -155,6 +155,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     app:cardElevation="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/goToAbout"
                     android:foreground="?selectableItemBackground">
 
                     <LinearLayout
@@ -190,6 +192,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="bottom|end"
+            app:backgroundTint="@color/colorPrimary"
             android:layout_margin="16dp"
             android:src="@drawable/ic_camera_alt_black_24dp"
             android:tint="@color/white"

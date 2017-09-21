@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\e63937201ca0f0bf072faf57c1bf412fc00b853f\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Jansen\\.android\\build-cache\\e63937201ca0f0bf072faf57c1bf412fc00b853f\\output\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\e63937201ca0f0bf072faf57c1bf412fc00b853f\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Jansen\\.android\\build-cache\\e63937201ca0f0bf072faf57c1bf412fc00b853f\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
@@ -30,6 +30,10 @@
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\e63937201ca0f0bf072faf57c1bf412fc00b853f\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_corn_farming_detail.xml",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\layout\\activity_corn_farming_detail.xml"
     },
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sample_app_menu_group_divider.xml",
@@ -66,6 +70,10 @@
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\e63937201ca0f0bf072faf57c1bf412fc00b853f\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_lesson_detail_image.xml",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\layout\\item_lesson_detail_image.xml"
     },
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sample_app_menu_group.xml",
@@ -184,6 +192,10 @@
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\986761d244a710aa64ce13d9a0990d994dab00bb\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_lesson_detail_header.xml",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\layout\\item_lesson_detail_header.xml"
+    },
+    {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\e63937201ca0f0bf072faf57c1bf412fc00b853f\\output\\res\\layout\\notification_template_part_time.xml"
     },
@@ -194,6 +206,10 @@
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\e63937201ca0f0bf072faf57c1bf412fc00b853f\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_about.xml",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\layout\\dialog_about.xml"
     },
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
@@ -234,6 +250,10 @@
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "C:\\Users\\Jansen\\.android\\build-cache\\986761d244a710aa64ce13d9a0990d994dab00bb\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_lesson_detail_text.xml",
+        "source": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\src\\main\\res\\layout\\item_lesson_detail_text.xml"
     },
     {
         "merged": "C:\\Users\\Jansen\\Desktop\\CornPestApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",

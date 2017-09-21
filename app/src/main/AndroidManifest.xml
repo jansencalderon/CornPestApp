@@ -100,6 +100,7 @@
             android:launchMode="singleTask" />
         <activity android:name="com.vuforia.samples.MainApp.ui.diseases.DiseasesActivity" />
         <activity android:name="com.vuforia.samples.MainApp.ui.cornFarming.CornFarmingActivity" />
+        <activity android:name="com.vuforia.samples.MainApp.ui.cornFarming.details.CornFarmingDetailsActivity" />
 
         <activity
             android:name=".ui.ActivityList.ActivityLauncher"

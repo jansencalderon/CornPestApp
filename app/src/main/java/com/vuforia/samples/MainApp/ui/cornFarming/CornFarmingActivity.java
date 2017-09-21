@@ -1,5 +1,6 @@
 package com.vuforia.samples.MainApp.ui.cornFarming;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,11 +8,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.MenuItem;
 
 import com.hannesdorfmann.mosby.mvp.MvpActivity;
+import com.vuforia.samples.MainApp.app.Constant;
 import com.vuforia.samples.MainApp.model.CornFarming;
+import com.vuforia.samples.MainApp.ui.cornFarming.details.CornFarmingDetailsActivity;
 import com.vuforia.samples.VuforiaSamples.R;
 import com.vuforia.samples.VuforiaSamples.databinding.ActivityCornFarmingBinding;
 
-public class CornFarmingActivity extends MvpActivity<CornFarmingView, CornFarmingPresenter> implements CornFarmingView{
+public class CornFarmingActivity extends MvpActivity<CornFarmingView, CornFarmingPresenter> implements CornFarmingView {
 
     ActivityCornFarmingBinding binding;
 
@@ -33,10 +36,10 @@ public class CornFarmingActivity extends MvpActivity<CornFarmingView, CornFarmin
     }
 
     @Override
-    public void OnItemClicked(CornFarming item){
-    //    Intent i = new Intent(this, DiseaseDetail.class);
-    //    i.putExtra(Constant.ID, item.getId());
-   //     startActivity(i);
+    public void OnItemClicked(CornFarming item) {
+        Intent i = new Intent(this, CornFarmingDetailsActivity.class);
+        i.putExtra(Constant.ID, item.getId());
+        startActivity(i);
     }
 
 

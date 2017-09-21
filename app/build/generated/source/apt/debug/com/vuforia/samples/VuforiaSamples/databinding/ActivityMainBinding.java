@@ -15,10 +15,12 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
         sViewsWithIds.put(R.id.imageView2, 4);
         sViewsWithIds.put(R.id.goToDiseases, 5);
         sViewsWithIds.put(R.id.imageView3, 6);
-        sViewsWithIds.put(R.id.fab, 7);
+        sViewsWithIds.put(R.id.goToAbout, 7);
+        sViewsWithIds.put(R.id.fab, 8);
     }
     // views
     public final android.support.design.widget.FloatingActionButton fab;
+    public final android.support.v7.widget.CardView goToAbout;
     public final android.support.v7.widget.CardView goToCornFarming;
     public final android.support.v7.widget.CardView goToDiseases;
     public final android.support.v7.widget.CardView goToInsects;
@@ -33,8 +35,9 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
 
     public ActivityMainBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds);
-        this.fab = (android.support.design.widget.FloatingActionButton) bindings[7];
+        final Object[] bindings = mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds);
+        this.fab = (android.support.design.widget.FloatingActionButton) bindings[8];
+        this.goToAbout = (android.support.v7.widget.CardView) bindings[7];
         this.goToCornFarming = (android.support.v7.widget.CardView) bindings[2];
         this.goToDiseases = (android.support.v7.widget.CardView) bindings[5];
         this.goToInsects = (android.support.v7.widget.CardView) bindings[3];

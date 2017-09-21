@@ -1,5 +1,6 @@
 package com.vuforia.samples.MainApp.model;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
@@ -13,6 +14,7 @@ public class CornFarming extends RealmObject{
     private Integer id;
     private String cfName;
     private String cfImage;
+    private RealmList<CornFarmingDetail> cornFarmingDetails;
 
     public Integer getId() {
         return id;
@@ -36,5 +38,13 @@ public class CornFarming extends RealmObject{
 
     public void setCfImage(String cfImage) {
         this.cfImage = cfImage;
+    }
+
+    public RealmList<CornFarmingDetail> getCornFarmingDetails() {
+        return cornFarmingDetails;
+    }
+
+    public void setCornFarmingDetails(RealmList<CornFarmingDetail> cornFarmingDetails) {
+        this.cornFarmingDetails = cornFarmingDetails;
     }
 }

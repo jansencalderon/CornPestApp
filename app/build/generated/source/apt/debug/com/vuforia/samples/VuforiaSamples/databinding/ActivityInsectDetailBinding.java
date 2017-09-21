@@ -16,11 +16,11 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
     public final android.support.design.widget.AppBarLayout appBar;
     public final android.widget.ImageView imageView;
     private final android.support.design.widget.CoordinatorLayout mboundView0;
-    private final android.widget.TextView mboundView3;
     private final android.widget.TextView mboundView4;
     private final android.widget.TextView mboundView5;
     private final android.widget.TextView mboundView6;
     private final android.widget.TextView mboundView7;
+    public final android.widget.TextView textView;
     public final android.support.v7.widget.Toolbar toolbar;
     public final android.support.design.widget.CollapsingToolbarLayout toolbarLayout;
     // variables
@@ -36,8 +36,6 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
         this.imageView = (android.widget.ImageView) bindings[9];
         this.mboundView0 = (android.support.design.widget.CoordinatorLayout) bindings[0];
         this.mboundView0.setTag(null);
-        this.mboundView3 = (android.widget.TextView) bindings[3];
-        this.mboundView3.setTag(null);
         this.mboundView4 = (android.widget.TextView) bindings[4];
         this.mboundView4.setTag(null);
         this.mboundView5 = (android.widget.TextView) bindings[5];
@@ -46,6 +44,8 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
         this.mboundView6.setTag(null);
         this.mboundView7 = (android.widget.TextView) bindings[7];
         this.mboundView7.setTag(null);
+        this.textView = (android.widget.TextView) bindings[3];
+        this.textView.setTag(null);
         this.toolbar = (android.support.v7.widget.Toolbar) bindings[2];
         this.toolbar.setTag(null);
         this.toolbarLayout = (android.support.design.widget.CollapsingToolbarLayout) bindings[1];
@@ -139,11 +139,11 @@ public class ActivityInsectDetailBinding extends android.databinding.ViewDataBin
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView3, itemInsectDesc);
             android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, itemInsectTime);
             android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, itemInsectSampling);
             android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView6, itemInsectThreshold);
             android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView7, itemInsectManagement);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.textView, itemInsectDesc);
             this.toolbar.setTitle(itemInsectName);
             this.toolbarLayout.setTitle(itemInsectName);
         }

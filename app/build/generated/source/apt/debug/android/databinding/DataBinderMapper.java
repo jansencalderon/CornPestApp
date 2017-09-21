@@ -9,26 +9,34 @@ class DataBinderMapper  {
         switch(layoutId) {
                 case com.vuforia.samples.VuforiaSamples.R.layout.item_insect:
                     return com.vuforia.samples.VuforiaSamples.databinding.ItemInsectBinding.bind(view, bindingComponent);
-                case com.vuforia.samples.VuforiaSamples.R.layout.activity_main:
-                    return com.vuforia.samples.VuforiaSamples.databinding.ActivityMainBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.item_lesson_detail_image:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ItemLessonDetailImageBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.item_lesson_detail_header:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ItemLessonDetailHeaderBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.dialog_result:
                     return com.vuforia.samples.VuforiaSamples.databinding.DialogResultBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.item_lesson_detail_text:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ItemLessonDetailTextBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.item_corn_farming:
                     return com.vuforia.samples.VuforiaSamples.databinding.ItemCornFarmingBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.activity_insect_detail:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ActivityInsectDetailBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.activity_main:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ActivityMainBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_disease_detail:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityDiseaseDetailBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_disease:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityDiseaseBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.camera_overlay:
                     return com.vuforia.samples.VuforiaSamples.databinding.CameraOverlayBinding.bind(view, bindingComponent);
-                case com.vuforia.samples.VuforiaSamples.R.layout.activity_insect_detail:
-                    return com.vuforia.samples.VuforiaSamples.databinding.ActivityInsectDetailBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_insects:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityInsectsBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.item_disease:
                     return com.vuforia.samples.VuforiaSamples.databinding.ItemDiseaseBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_corn_farming:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityCornFarmingBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.activity_corn_farming_detail:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ActivityCornFarmingDetailBinding.bind(view, bindingComponent);
         }
         return null;
     }
@@ -49,9 +57,15 @@ class DataBinderMapper  {
                 }
                 break;
             }
-            case 423753077: {
-                if(tag.equals("layout/activity_main_0")) {
-                    return com.vuforia.samples.VuforiaSamples.R.layout.activity_main;
+            case -1746756578: {
+                if(tag.equals("layout/item_lesson_detail_image_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.item_lesson_detail_image;
+                }
+                break;
+            }
+            case 1429464940: {
+                if(tag.equals("layout/item_lesson_detail_header_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.item_lesson_detail_header;
                 }
                 break;
             }
@@ -61,9 +75,27 @@ class DataBinderMapper  {
                 }
                 break;
             }
+            case -1964874356: {
+                if(tag.equals("layout/item_lesson_detail_text_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.item_lesson_detail_text;
+                }
+                break;
+            }
             case 288713997: {
                 if(tag.equals("layout/item_corn_farming_0")) {
                     return com.vuforia.samples.VuforiaSamples.R.layout.item_corn_farming;
+                }
+                break;
+            }
+            case 1176944462: {
+                if(tag.equals("layout/activity_insect_detail_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.activity_insect_detail;
+                }
+                break;
+            }
+            case 423753077: {
+                if(tag.equals("layout/activity_main_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.activity_main;
                 }
                 break;
             }
@@ -85,12 +117,6 @@ class DataBinderMapper  {
                 }
                 break;
             }
-            case 1176944462: {
-                if(tag.equals("layout/activity_insect_detail_0")) {
-                    return com.vuforia.samples.VuforiaSamples.R.layout.activity_insect_detail;
-                }
-                break;
-            }
             case 973888337: {
                 if(tag.equals("layout/activity_insects_0")) {
                     return com.vuforia.samples.VuforiaSamples.R.layout.activity_insects;
@@ -109,6 +135,12 @@ class DataBinderMapper  {
                 }
                 break;
             }
+            case -1471435583: {
+                if(tag.equals("layout/activity_corn_farming_detail_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.activity_corn_farming_detail;
+                }
+                break;
+            }
         }
         return 0;
     }
@@ -121,6 +153,7 @@ class DataBinderMapper  {
     private static class InnerBrLookup {
         static String[] sKeys = new String[]{
             "_all"
+            ,"detail"
             ,"item"
             ,"view"};
     }

@@ -2,7 +2,37 @@
   {
     "id": 1,
     "cfName": "Developmental Stage",
-    "cfImage": "dev_stage.jpg"
+    "cfImage": "dev_stage.jpg",
+    "cornFarmingDetails": [
+      {
+        "id": 1,
+        "cfId": 1,
+        "sequence": 1,
+        "content": "Vegetative and reproductive stages are determined on a whole-field basis when at least 50 percent of the plants have reached or are beyond a particular stage.",
+        "type": "header"
+      },
+      {
+        "id": 2,
+        "cfId": 1,
+        "sequence": 2,
+        "content": "Vegetative Stages",
+        "type": "text"
+      },
+      {
+        "id": 3,
+        "cfId": 1,
+        "sequence": 3,
+        "content": "• VE: emergence of the shoot from the soil.\n • V1: lowest leaf has a visible collar; this leaf has a rounded tip, unlike subsequent pointed leaves.\r\n • V2: two lowest leaves have a visible collar.\r\n • V(n): “n” leaf collars present; there are 17 to 22 V stages before tassel emergence.\r\n • VT: lowest branch of the tassel is visible, but silks have  not emerged.",
+        "type": "text"
+      },
+      {
+        "id": 4,
+        "cfId": 1,
+        "sequence": 4,
+        "content": "menu_corn_farming.jpg",
+        "type": "image"
+      }
+    ]
   },
   {
     "id": 2,

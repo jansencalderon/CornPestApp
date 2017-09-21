@@ -64,6 +64,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="18sp"
                     android:text="Description"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
 
@@ -71,6 +73,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:tag="binding_3"       
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
 
                 <TextView
@@ -79,12 +83,16 @@
                     android:layout_marginBottom="6dp"
                     android:layout_marginTop="16dp"
                     android:text="Symptoms"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="18sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:tag="binding_4"           
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
 
                 <TextView
@@ -93,11 +101,15 @@
                     android:layout_marginBottom="6dp"
                     android:layout_marginTop="16dp"
                     android:text="Management"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="18sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14sp"
                     android:tag="binding_5"             
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
             </LinearLayout>

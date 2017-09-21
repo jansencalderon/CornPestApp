@@ -36,7 +36,7 @@
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/app_bar_height" />
+                    android:layout_height="250dp" />
 
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
@@ -57,78 +57,99 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
                     android:text="Description"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:tag="binding_3"          
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
                     android:text="Time Of Attack"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:tag="binding_4"          
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
                     android:text="Sampling"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:tag="binding_5"              
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
                     android:text="Threshold"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:tag="binding_6"               
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
                     android:text="Management"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:tag="binding_7"                
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textSize="14sp" />
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
 

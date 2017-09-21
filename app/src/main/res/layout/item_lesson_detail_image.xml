@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="view"
+            type="com.vuforia.samples.MainApp.ui.cornFarming.details.CornFarmingDetailsView" />
+
+        <variable
+            name="detail"
+            type="com.vuforia.samples.MainApp.model.CornFarmingDetail" />
+    </data>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_lesson_detail"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:maxHeight="250dp"
+            android:scaleType="fitCenter"
+            android:background="@color/lightestGray"
+            tools:ignore="ContentDescription" />
+        <!--android:onClick="@{()->view.imageZoom(lessonDetail)}"-->
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</layout>
