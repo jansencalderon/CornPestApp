@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 
 import com.hannesdorfmann.mosby.mvp.MvpActivity;
@@ -27,7 +28,10 @@ public class InsectsActivity extends MvpActivity<InsectsView,InsectsPresenter> i
         if (getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        binding.recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+
+        binding.recyclerView.setHasFixedSize(true);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(),2);
+        binding.recyclerView.setLayoutManager(layoutManager);
         InsectsListAdapter adapter = new InsectsListAdapter(getMvpView());
         binding.recyclerView.setAdapter(adapter);
         adapter.setList(presenter.insectList());

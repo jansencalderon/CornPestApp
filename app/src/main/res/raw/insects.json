@@ -7,8 +7,128 @@
     "insectSampling": "From emergence through 6-leaf stage, check 100 plants in three locations per field for stalk injury and larvae. Scout weekly or more often if burn-down herbicides kill weeds and trigger larvae to move to corn. ",
     "insectThreshold": "Treatment is justified if small larvae cause 3 percent stand loss, or if large larvae cause 5 percent stand loss. ",
     "insectManagement": "Good grass control prior to planting will reduce stalk borer incidence. ",
-    "insectImage": "common_stalk_borer.jpg",
-    "imageRecognition": "wew"
-
+    "insectImage": "common_stalk_borer.jpg                                                            ",
+    "imageRecognition": "corn_borer.jpg,corn_borer2.jpg"
+  },
+  {
+    "id": 2,
+    "insectName": "Black Cutworm",
+    "insectDesc": "Larvae are dark with minimal markings. Stages that damage corm range from 0.5 inch to 2 inches long",
+    "insectTime": "An occasional sweet corn pest. Stands can be lost before emergence or from seedling injury because of aboveground cutting or belowground tunneling. Black cutworm injury is greater where reduced tillage practices are used and abundant broadleaf weeds are present prior to planting.",
+    "insectSampling": "From emergence through 6-leaf stage, check 100 plants in three locations per field atleast weekly for injury. If an injured plant is found, dig around the base of the plant to find the cutworms and determine whether they are small (less than 0.5 inch long) or large (more than 0.5 inch)",
+    "insectThreshold": "Treatment is justified if small larvae cause 3 percent stand loss, or if large larvae cause 5 percent stand loss. ",
+    "insectManagement": "preventive treatment may be warranted in reduced tillage or no-tillage fields with substantial broadleaf weed infestations, however scouting for injured plants and cutworm larvae is still necessary. Rescue treatments may be applied if infestations exceed the threshold. Early tillage and good weed control before planting can reduce infestation",
+    "insectImage": "black_cutworm.jpg",
+    "imageRecognition": "black_cutworm.jpg,black_cutworm2.jpg"
+  },
+  {
+    "id": 3,
+    "insectName": "Seed Corn Maggot",
+    "insectDesc": "Larvae that feed in and destroy seeds are legless, headless, cream-colored maggots. Dark brown puparia contain the pupal stage.",
+    "insectTime": "Infestations are most common when cool, damp soils delay emergence in fields high in organic matter, especially in fields where cover crops, weeds, or manure have recently been incorporated into the soil",
+    "insectSampling": "Uncover seed rows where emergence is spotty. Look for larvae In decaying seeds or dark brown puparia that contain the pupal stage.",
+    "insectThreshold": "None established",
+    "insectManagement": "No rescue treatments are available. Effective seed treatments and soil insecticides are available. Avoid planting during cool, wet periods, or within three weeks of incorporating cover crops or weeds.",
+    "insectImage": "seed_corn_maggot2.jpg",
+    "imageRecognition": "seed_corn_maggot.jpg,seed_corn_maggot2.jpg"
+  },
+  {
+    "id": 4,
+    "insectName": "Corn Leaf Aphid",
+    "insectDesc": "Winged or non-winged blue-green aphid colonies on tassels produce honeydew that can disrupt pollination.",
+    "insectTime": "Winged adults migrate from the South and are common pests during July and August. Corn leaf aphid feeding can delay corn development under drought stress. The presence of aphid colonies on husk leaves is undesirable in some markets.",
+    "insectSampling": "Inspect 100 plants as tassels emerge (20 plants from five locations)",
+    "insectThreshold": "If 50 percent of plants have more than 50 aphids per plant, consider applying pesticide to protect pollination",
+    "insectManagement": "Natural predator activity and fungal disease often control infestations.",
+    "insectImage": "corn_aphid.jpg",
+    "imageRecognition": "corn_aphid.jpg,corn_aphid2.jpg"
+  },
+  {
+    "id": 5,
+    "insectName": "Army Worm",
+    "insectDesc": "Larvae are striped and feed on foliage during pre-whorl and whorl stages.",
+    "insectTime": "An uncommon sweet corn pest in most years. Infestations occur in no-till corn planted into grass and in corn that borders mature wheat. Infestations tend to 49 occur during cool, wet springs. Rarely, summer larvae enter ears, just as European corn borer and fall armyworm do.",
+    "insectSampling": "Inspect 20 plants in five locations per field at least weekly and then determine the percentage of damaged plants.",
+    "insectThreshold": "Treat with insecticide if more than 35 percent of the plants are infested during the seedling or early whorl stages. If 10-35 percent of the plants are infested, inspect the field again in three days.",
+    "insectManagement": "Scouting followed by rescue treatments (as needed) is preferred over preventive treatments, because armyworm is relatively easy to control if detected early.",
+    "insectImage": "army_worm.jpg",
+    "imageRecognition": "army_worm.jpg,army_worm2.jpg"
+  },
+  {
+    "id": 6,
+    "insectName": "Corn Earworm",
+    "insectDesc": "Moths are tan, with one dark spot on the middle of each forewing and a dark band at the end of each hind wing. Moths lay eggs singly on silks. Larvae vary greatly from yellow to green to pink. However, the head is always light brown and unmarked, and there are always microscopic spines covering the body. ",
+    "insectTime": "A key sweet corn pest in the Midwest, where it overwinters only in the very southern portions of Ohio, Indiana, Illinois, Missouri and Kansas. It migrates from the southern United States into the Mildwest and 54. Canada as the season progresses, often arriving in northern regions in August or September but sometimes as early as June or July.",
+    "insectSampling": "Bait a cone-shaped Heliothis trap with a Hercon Zealure pheromone strip and place it near silking corn. Make sure the trap's bottom and pheromone lure are at ear height. Count and remove moths daily; change the lure every 10-14 days.",
+    "insectThreshold": "Recommend thresholds vary between states and provinces. For fresh-market sweet corn, control is generally advised if the traps are catching moths during silking. Processor thresholds may vary according to hybrid and processing practices.",
+    "insectManagement": "When moth counts and temperatures are low, spray intervals may be as great as four to five days. When moth counts and temperatures are high, spray intervals should be reduced to two to three days. But sweet corn hybrids reduce, but do not eliminate, corn earworm infestation and do not prevent infestations of sap beetles or rootworm beetles.",
+    "insectImage": "corn_earworm.jpg",
+    "imageRecognition": "corn_earworm.jpg,corn_earworm2.jpg"
+  },
+  {
+    "id": 7,
+    "insectName": "White Grub",
+    "insectDesc": "White grubs are the C-shaped larvae of scarab beetles. They have a brown head capsule and three pairs of thoracic legs. Near the end of the abdomen, the cuticle (skin) is translucent, so the gut's contents make this portion of the body appear dark. Adults are heavy-bodied beetles and most are tan to dark brown (although the Japanese beetle is more colorful).",
+    "insectTime": "Uncommon pests in sweet corn production. Larvae feed on the roots of grasses, including sweet corn, reducing plant vigor or stand. Some species require three years to develop from egg to adult and these species are most damaging to sweet corn planted where grasses were abundant one or two years earlier.",
+    "insectSampling": "Dig soil samples and sift them to look for grubs before planting in the spring. White grub populations may be spotty within fields, and no statistically based sampling plan has been developed for sweet corn.",
+    "insectThreshold": "No definitive threshold has been developed for grubs in sweet corn. Stand losses may occur where there is more than one perennial white grub per cubic foot of soil.",
+    "insectManagement": "There are no effective rescue treatments for white grubs. Effective seed treatments and soil insecticides are available. To avoid infestations, do not plant sweet corn within two years after fields have been used for pasture or other grasses.",
+    "insectImage": "white_grub2.jpg",
+    "imageRecognition": "white_grub.jpg,white_grub2.jpg"
+  },
+  {
+    "id": 8,
+    "insectName": "Green Semilooper",
+    "insectDesc": "Green semiloopers are found in wetland environments. They are abundant during the rainy season. The adult moths hide at the base of the plants in corn fields or in grassy areas during daytime and are active at night. Prior to pupation, the older larvae fold a rice leaf and secure it with silk to form a pupal chamber.",
+    "insectTime": "Populations of green semiloopers tend to build up in areas of staggered planting, thus early planting is a good strategy to escape damage from semilooper and most other pests. It is best to time crop establishment within the first several weeks of the planting season.",
+    "insectSampling": "Green semilooper is a minor pest of corn.\nDespite its larvae defoliating the rice plants, this pest rarely causes economic loss because crops can recover from the damage. Natural enemies often suppress its populations.",
+    "insectThreshold": "The best strategy to minimize the impact of green semiloopers is to ensure that the crop is well managed agronomically and monitored for the presence of pests on a weekly basis. An early warning is the presence of moths in the field, but one should not attempt control methods on their presence alone as natural enemies, particularly egg predators, often make control unnecessary. Defoliation from green semiloopers should be assessed in terms of other stresses affecting the crop. ",
+    "insectManagement": "Semiloopers are generally managed by natural biological control agents: small trichogrammatid wasps, ichneumonid, braconid, elasmid, eulophid and chalcid wasps, and spiders.",
+    "insectImage": "green_semilooper.jpg",
+    "imageRecognition": "green_semilooper.jpg,green_semilooper2.jpg"
+  },
+  {
+    "id": 9,
+    "insectName": "Field Crickets",
+    "insectDesc": "Crickets, also called gryllids, feed on leaves by making irregular to longitudinal exit holes. They also feed on stems, seeds, and on young panicles of the corn plant. When feeding damage is excessive, they can cause deadheart.",
+    "insectTime": "Crickets are both leaf- and stem-feeding insects. They are active at night, and their nymphs are more destructive than the adults. They are common in the irrigated rice environment. In upland environment, the insects are found underneath heaps of weed piles.",
+    "insectSampling": "Inspect 50 plants in five locations per field at least weekly and then determine the percentage of damaged plants.",
+    "insectThreshold": "Cutting of central portions of the leaf blades leaving only the midrib. Crickets can be numerous and can totally infest the crop, especially the young rice panicles.",
+    "insectManagement": "There are no known control practices for this insect.",
+    "insectImage": "field_cricket.jpg",
+    "imageRecognition": "field_cricket.jpg,field_cricket2.jpg"
+  },
+  {
+    "id": 10,
+    "insectName": "Grass Hopper",
+    "insectDesc": "Grasshoppers result to cut out areas on leaves and cut-off panicles. They feed on leaf margins.",
+    "insectTime": "Grasshoppers are common in moist and swampy areas. These nocturnal insect pests are abundant during September and October.",
+    "insectSampling": "Grasshopper damage can be confused with damage caused by other defoliators. To confirm, find the insect and the characteristic form of leaf damage.",
+    "insectThreshold": "Check for insect presence,eggs in pods and presence of yellow and brown nymphs and adults feeding on rice foliage. To confirm, find the insect and the characteristic form of leaf damage.",
+    "insectManagement": "Use foliar sprays to control grasshoppers in corn fields. Granules are not effective.",
+    "insectImage": "grasshopper.jpg",
+    "imageRecognition": "grasshopper.jpg,grasshopper2.jpg"
+  },
+  {
+    "id": 11,
+    "insectName": "Corn Thrips",
+    "insectDesc": "Corn thrips are small (1.5 mm) and slender and best viewed using a hand lens; adult thrips are pale yellow to light brown and the nymphs are smaller and lighter in color.",
+    "insectTime": "May be found on corn at any time during the growing season.",
+    "insectSampling": "Inspect weekly during seedling and control if thrips are found in the throat combined with yellowing of the throat or necrotic stripes on young leaves.",
+    "insectThreshold": "Apply controls if plants develop yellowing in the throat and/or necrotic stripes on young leaves, and thrips can be found in the throat. Re-infestation may be rapid, so more than one spray may be required.",
+    "insectManagement": "Apply appropriate insecticide if thrips become problematic; young plants will recover from damage and treatment is not often necessary as the thrips are beneficial for controlling mites.",
+    "insectImage": "corn_thrips.jpg",
+    "imageRecognition": "corn_thrips.jpg,corn_thrips2.jpg"
+  },
+  {
+    "id": 12,
+    "insectName": "Maize weevil",
+    "insectDesc": "Maize weevil is a small snout beetle which varies in size, averaging about three thirty-second inch in length. It varies from dull red-brown to nearly black and is usually marked on the back with four light reddish or yellowish spots.",
+    "insectTime": "Its larva is dormant for four to five months during the winter in colder climates. There are generally four to five generations per year, although in heated warehouses there may be as many as 10 to 12 generations.",
+    "insectSampling": "To kill the internal stages (larval and pupal), you must fumigate. Heating grain to 60C can kill larvae; however, this may decrease germination and baking quality of flour.",
+    "insectThreshold": "Treatments can be applied as the grain is loaded into the bin through the use of a metering device calibrated to apply the proper amounts. After the grain is binned and leveled, a surface dressing can be applied to prevent insects from entering the grain on the surface. If infestation occurs in spite of these precautions, fumigation of the grain will be necessary. ",
+    "insectManagement": "Prevention is the best strategy to avoid insect problems in stored grains. Proper bin sanitation before introduction of new grain minimizes the need for pesticides. Good sanitation involves the removal of old grain and dust in and around the grain bin. This includes removal of old grain from corners, floors, and walls and grain that may have spilled on the exterior of the bin. Any grain remaining when a bin is emptied can harbor insect infestations.",
+    "insectImage": "maize_weevil.jpg",
+    "imageRecognition": "maize_weevil.jpg,maize_weevil2.jpg"
   }
 ]

@@ -1,10 +1,15 @@
 package com.vuforia.samples.VuforiaSamples.databinding;
 import com.vuforia.samples.VuforiaSamples.R;
 import com.vuforia.samples.VuforiaSamples.BR;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.view.View;
+@SuppressWarnings("unchecked")
 public class ActivityDiseaseBinding extends android.databinding.ViewDataBinding  {
 
+    @Nullable
     private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
@@ -13,16 +18,20 @@ public class ActivityDiseaseBinding extends android.databinding.ViewDataBinding 
         sViewsWithIds.put(R.id.recyclerView, 2);
     }
     // views
+    @NonNull
     private final android.widget.LinearLayout mboundView0;
+    @NonNull
     public final android.support.v7.widget.RecyclerView recyclerView;
+    @NonNull
     public final android.support.v7.widget.Toolbar toolbar;
     // variables
+    @Nullable
     private com.vuforia.samples.MainApp.ui.diseases.DiseasesView mView;
     // values
     // listeners
     // Inverse Binding Event Handlers
 
-    public ActivityDiseaseBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
+    public ActivityDiseaseBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 0);
         final Object[] bindings = mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds);
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
@@ -52,18 +61,22 @@ public class ActivityDiseaseBinding extends android.databinding.ViewDataBinding 
         return false;
     }
 
-    public boolean setVariable(int variableId, Object variable) {
-        switch(variableId) {
-            case BR.view :
-                setView((com.vuforia.samples.MainApp.ui.diseases.DiseasesView) variable);
-                return true;
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.view == variableId) {
+            setView((com.vuforia.samples.MainApp.ui.diseases.DiseasesView) variable);
         }
-        return false;
+        else {
+            variableSet = false;
+        }
+            return variableSet;
     }
 
-    public void setView(com.vuforia.samples.MainApp.ui.diseases.DiseasesView View) {
+    public void setView(@Nullable com.vuforia.samples.MainApp.ui.diseases.DiseasesView View) {
         this.mView = View;
     }
+    @Nullable
     public com.vuforia.samples.MainApp.ui.diseases.DiseasesView getView() {
         return mView;
     }
@@ -89,22 +102,28 @@ public class ActivityDiseaseBinding extends android.databinding.ViewDataBinding 
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
 
-    public static ActivityDiseaseBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot) {
+    @NonNull
+    public static ActivityDiseaseBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.view.ViewGroup root, boolean attachToRoot) {
         return inflate(inflater, root, attachToRoot, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ActivityDiseaseBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ActivityDiseaseBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.view.ViewGroup root, boolean attachToRoot, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         return android.databinding.DataBindingUtil.<ActivityDiseaseBinding>inflate(inflater, com.vuforia.samples.VuforiaSamples.R.layout.activity_disease, root, attachToRoot, bindingComponent);
     }
-    public static ActivityDiseaseBinding inflate(android.view.LayoutInflater inflater) {
+    @NonNull
+    public static ActivityDiseaseBinding inflate(@NonNull android.view.LayoutInflater inflater) {
         return inflate(inflater, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ActivityDiseaseBinding inflate(android.view.LayoutInflater inflater, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ActivityDiseaseBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         return bind(inflater.inflate(com.vuforia.samples.VuforiaSamples.R.layout.activity_disease, null, false), bindingComponent);
     }
-    public static ActivityDiseaseBinding bind(android.view.View view) {
+    @NonNull
+    public static ActivityDiseaseBinding bind(@NonNull android.view.View view) {
         return bind(view, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ActivityDiseaseBinding bind(android.view.View view, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ActivityDiseaseBinding bind(@NonNull android.view.View view, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         if (!"layout/activity_disease_0".equals(view.getTag())) {
             throw new RuntimeException("view tag isn't correct on view:" + view.getTag());
         }

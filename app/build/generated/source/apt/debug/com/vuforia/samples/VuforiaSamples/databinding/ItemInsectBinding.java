@@ -1,10 +1,15 @@
 package com.vuforia.samples.VuforiaSamples.databinding;
 import com.vuforia.samples.VuforiaSamples.R;
 import com.vuforia.samples.VuforiaSamples.BR;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.view.View;
+@SuppressWarnings("unchecked")
 public class ItemInsectBinding extends android.databinding.ViewDataBinding implements android.databinding.generated.callback.OnClickListener.Listener {
 
+    @Nullable
     private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
@@ -12,18 +17,24 @@ public class ItemInsectBinding extends android.databinding.ViewDataBinding imple
         sViewsWithIds.put(R.id.imageView, 2);
     }
     // views
+    @NonNull
     public final android.widget.ImageView imageView;
+    @NonNull
     private final android.support.v7.widget.CardView mboundView0;
+    @NonNull
     private final android.widget.TextView mboundView1;
     // variables
+    @Nullable
     private com.vuforia.samples.MainApp.model.Insect mItem;
+    @Nullable
     private com.vuforia.samples.MainApp.ui.insects.InsectsView mView;
+    @Nullable
     private final android.view.View.OnClickListener mCallback1;
     // values
     // listeners
     // Inverse Binding Event Handlers
 
-    public ItemInsectBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
+    public ItemInsectBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 0);
         final Object[] bindings = mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds);
         this.imageView = (android.widget.ImageView) bindings[2];
@@ -55,19 +66,22 @@ public class ItemInsectBinding extends android.databinding.ViewDataBinding imple
         return false;
     }
 
-    public boolean setVariable(int variableId, Object variable) {
-        switch(variableId) {
-            case BR.item :
-                setItem((com.vuforia.samples.MainApp.model.Insect) variable);
-                return true;
-            case BR.view :
-                setView((com.vuforia.samples.MainApp.ui.insects.InsectsView) variable);
-                return true;
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.item == variableId) {
+            setItem((com.vuforia.samples.MainApp.model.Insect) variable);
         }
-        return false;
+        else if (BR.view == variableId) {
+            setView((com.vuforia.samples.MainApp.ui.insects.InsectsView) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
     }
 
-    public void setItem(com.vuforia.samples.MainApp.model.Insect Item) {
+    public void setItem(@Nullable com.vuforia.samples.MainApp.model.Insect Item) {
         this.mItem = Item;
         synchronized(this) {
             mDirtyFlags |= 0x1L;
@@ -75,10 +89,11 @@ public class ItemInsectBinding extends android.databinding.ViewDataBinding imple
         notifyPropertyChanged(BR.item);
         super.requestRebind();
     }
+    @Nullable
     public com.vuforia.samples.MainApp.model.Insect getItem() {
         return mItem;
     }
-    public void setView(com.vuforia.samples.MainApp.ui.insects.InsectsView View) {
+    public void setView(@Nullable com.vuforia.samples.MainApp.ui.insects.InsectsView View) {
         this.mView = View;
         synchronized(this) {
             mDirtyFlags |= 0x2L;
@@ -86,6 +101,7 @@ public class ItemInsectBinding extends android.databinding.ViewDataBinding imple
         notifyPropertyChanged(BR.view);
         super.requestRebind();
     }
+    @Nullable
     public com.vuforia.samples.MainApp.ui.insects.InsectsView getView() {
         return mView;
     }
@@ -153,22 +169,28 @@ public class ItemInsectBinding extends android.databinding.ViewDataBinding imple
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
 
-    public static ItemInsectBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot) {
+    @NonNull
+    public static ItemInsectBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.view.ViewGroup root, boolean attachToRoot) {
         return inflate(inflater, root, attachToRoot, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ItemInsectBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ItemInsectBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.view.ViewGroup root, boolean attachToRoot, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         return android.databinding.DataBindingUtil.<ItemInsectBinding>inflate(inflater, com.vuforia.samples.VuforiaSamples.R.layout.item_insect, root, attachToRoot, bindingComponent);
     }
-    public static ItemInsectBinding inflate(android.view.LayoutInflater inflater) {
+    @NonNull
+    public static ItemInsectBinding inflate(@NonNull android.view.LayoutInflater inflater) {
         return inflate(inflater, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ItemInsectBinding inflate(android.view.LayoutInflater inflater, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ItemInsectBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         return bind(inflater.inflate(com.vuforia.samples.VuforiaSamples.R.layout.item_insect, null, false), bindingComponent);
     }
-    public static ItemInsectBinding bind(android.view.View view) {
+    @NonNull
+    public static ItemInsectBinding bind(@NonNull android.view.View view) {
         return bind(view, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ItemInsectBinding bind(android.view.View view, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ItemInsectBinding bind(@NonNull android.view.View view, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         if (!"layout/item_insect_0".equals(view.getTag())) {
             throw new RuntimeException("view tag isn't correct on view:" + view.getTag());
         }

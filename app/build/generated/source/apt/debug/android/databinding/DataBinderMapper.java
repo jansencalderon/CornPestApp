@@ -2,7 +2,7 @@
 package android.databinding;
 import com.vuforia.samples.VuforiaSamples.BR;
 class DataBinderMapper  {
-    final static int TARGET_MIN_SDK = 24;
+    final static int TARGET_MIN_SDK = 17;
     public DataBinderMapper() {
     }
     public android.databinding.ViewDataBinding getDataBinder(android.databinding.DataBindingComponent bindingComponent, android.view.View view, int layoutId) {
@@ -21,6 +21,8 @@ class DataBinderMapper  {
                     return com.vuforia.samples.VuforiaSamples.databinding.ItemCornFarmingBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_insect_detail:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityInsectDetailBinding.bind(view, bindingComponent);
+                case com.vuforia.samples.VuforiaSamples.R.layout.activity_result:
+                    return com.vuforia.samples.VuforiaSamples.databinding.ActivityResultBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_main:
                     return com.vuforia.samples.VuforiaSamples.databinding.ActivityMainBinding.bind(view, bindingComponent);
                 case com.vuforia.samples.VuforiaSamples.R.layout.activity_disease_detail:
@@ -90,6 +92,12 @@ class DataBinderMapper  {
             case 1176944462: {
                 if(tag.equals("layout/activity_insect_detail_0")) {
                     return com.vuforia.samples.VuforiaSamples.R.layout.activity_insect_detail;
+                }
+                break;
+            }
+            case -1122809831: {
+                if(tag.equals("layout/activity_result_0")) {
+                    return com.vuforia.samples.VuforiaSamples.R.layout.activity_result;
                 }
                 break;
             }

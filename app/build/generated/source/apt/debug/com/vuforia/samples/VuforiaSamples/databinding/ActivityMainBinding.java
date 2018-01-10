@@ -1,10 +1,15 @@
 package com.vuforia.samples.VuforiaSamples.databinding;
 import com.vuforia.samples.VuforiaSamples.R;
 import com.vuforia.samples.VuforiaSamples.BR;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.view.View;
+@SuppressWarnings("unchecked")
 public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
 
+    @Nullable
     private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
@@ -19,21 +24,30 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
         sViewsWithIds.put(R.id.fab, 8);
     }
     // views
+    @NonNull
     public final android.support.design.widget.FloatingActionButton fab;
+    @NonNull
     public final android.support.v7.widget.CardView goToAbout;
+    @NonNull
     public final android.support.v7.widget.CardView goToCornFarming;
+    @NonNull
     public final android.support.v7.widget.CardView goToDiseases;
+    @NonNull
     public final android.support.v7.widget.CardView goToInsects;
+    @NonNull
     public final android.widget.ImageView imageView2;
+    @NonNull
     public final android.widget.ImageView imageView3;
+    @NonNull
     private final android.widget.RelativeLayout mboundView0;
+    @NonNull
     public final android.support.v7.widget.Toolbar toolbar;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
-    public ActivityMainBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
+    public ActivityMainBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 0);
         final Object[] bindings = mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds);
         this.fab = (android.support.design.widget.FloatingActionButton) bindings[8];
@@ -69,10 +83,10 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
         return false;
     }
 
-    public boolean setVariable(int variableId, Object variable) {
-        switch(variableId) {
-        }
-        return false;
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+            return variableSet;
     }
 
     @Override
@@ -96,22 +110,28 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
 
-    public static ActivityMainBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot) {
+    @NonNull
+    public static ActivityMainBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.view.ViewGroup root, boolean attachToRoot) {
         return inflate(inflater, root, attachToRoot, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ActivityMainBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ActivityMainBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.view.ViewGroup root, boolean attachToRoot, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         return android.databinding.DataBindingUtil.<ActivityMainBinding>inflate(inflater, com.vuforia.samples.VuforiaSamples.R.layout.activity_main, root, attachToRoot, bindingComponent);
     }
-    public static ActivityMainBinding inflate(android.view.LayoutInflater inflater) {
+    @NonNull
+    public static ActivityMainBinding inflate(@NonNull android.view.LayoutInflater inflater) {
         return inflate(inflater, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ActivityMainBinding inflate(android.view.LayoutInflater inflater, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ActivityMainBinding inflate(@NonNull android.view.LayoutInflater inflater, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         return bind(inflater.inflate(com.vuforia.samples.VuforiaSamples.R.layout.activity_main, null, false), bindingComponent);
     }
-    public static ActivityMainBinding bind(android.view.View view) {
+    @NonNull
+    public static ActivityMainBinding bind(@NonNull android.view.View view) {
         return bind(view, android.databinding.DataBindingUtil.getDefaultComponent());
     }
-    public static ActivityMainBinding bind(android.view.View view, android.databinding.DataBindingComponent bindingComponent) {
+    @NonNull
+    public static ActivityMainBinding bind(@NonNull android.view.View view, @Nullable android.databinding.DataBindingComponent bindingComponent) {
         if (!"layout/activity_main_0".equals(view.getTag())) {
             throw new RuntimeException("view tag isn't correct on view:" + view.getTag());
         }

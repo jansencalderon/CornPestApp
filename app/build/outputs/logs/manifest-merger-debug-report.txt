@@ -1,181 +1,257 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-174:12
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\57da9fdc731e956bfb34ec33e3158649\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\1a5934e30c0dcb0d466b78a841e1b744\AndroidManifest.xml:17:1-26:12
+MERGED from [io.realm:realm-android-library:3.3.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\realm-android-library-3.3.2.aar\31dccc13026ff2a59a89223fa0fe5ee5\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\71924733ae029c910aa2111a8bd03f8c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b3c8b479c30363358dcc409970fc1367\AndroidManifest.xml:17:1-28:12
+MERGED from [com.hannesdorfmann.mosby:viewstate:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\viewstate-2.0.1.aar\41ccd7c3b71a7581d05882b10248ad33\AndroidManifest.xml:2:1-13:12
+MERGED from [com.hannesdorfmann.mosby:mvp:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\mvp-2.0.1.aar\ff107e622f05d339ffde6ea37014ef53\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\35cd014f33753ad4c5ed1857d16a142d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\304846c9366e1977c49e5f44fdb5b986\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\08a360e503488bffc597abf2128c06e1\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\12c7c1a8cb8604558eea0c40d2659d6e\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\78d1ee999e0ddffa392c43a39f30536f\AndroidManifest.xml:2:1-11:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\7f73ae14eb135e55a5cb9b1f216b6e4c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\29d984fdfb27145eca740c08d5f724c4\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\e145fbd69e9434e719259317691b742f\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\9e6cd1224651a54199e8e87ed49e2aa6\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\b1cd7e42085a87ecbd62a93ebfd6b0a2\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\aff8db132cc621c907180f86f801f576\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3c75a78a6cfabfdc5e2dc0223688697d\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\12ce49d060395fb5b2ee3a3787302ace\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
 	package
 		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
+		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:1-157:12
 		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 uses-feature#0x00020000
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:6:5-54
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:5:5-54
 	android:glEsVersion
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:6:19-51
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:5:19-51
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:22:5-60
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:21:5-60
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:22:19-57
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:21:19-57
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:27:5-65
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:24:5-65
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:27:22-62
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:24:22-62
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:32:5-67
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:27:5-67
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:32:22-64
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:27:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:38:5-79
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:33:5-79
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:38:22-76
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:33:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:40:5-80
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:34:5-80
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:40:22-77
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:34:22-77
 application
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:52:5-172:19
-MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.android\build-cache\3e97aa27651374f54e4bc3288cb19e7660045d94\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.android\build-cache\986761d244a710aa64ce13d9a0990d994dab00bb\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.android\build-cache\29039adce8684ad334e2d4cd6c021383069d0a3a\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.android\build-cache\a835e9fadb60fdbd97cdab4dd5b8b1ed4beb753d\output\AndroidManifest.xml:26:5-20
-MERGED from [com.hannesdorfmann.mosby:viewstate:2.0.1] C:\Users\Jansen\.android\build-cache\163640583e42fa8367afe95ff4c91b9340a01fb7\output\AndroidManifest.xml:11:5-20
-MERGED from [com.hannesdorfmann.mosby:mvp:2.0.1] C:\Users\Jansen\.android\build-cache\8eece1ce1d3b9b762dcce58a9881b5a0f719d5a4\output\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.android\build-cache\e63937201ca0f0bf072faf57c1bf412fc00b853f\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.android\build-cache\0dde80aa4c270902d1821c9bbc7ac9b9db1f566b\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.android\build-cache\e78f1e27b9aad71cf6c1b4739eb6c1e469858ce2\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.android\build-cache\86887203e919be5248d1de5282993f3f0cf2c260\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.android\build-cache\e7ef2bd6b489bbbfa0e5b749b1f2a3f5ef05f36a\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.android\build-cache\6fa51e9f69a179adeb040e122240200226c70580\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.android\build-cache\546863c60177e169be37ca458fd007515d0394ff\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.android\build-cache\974e69c50e1c1ad44fe84ec1dafef2036b3c6f9f\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.android\build-cache\dcf4956a04dc757ca616c26253795afffcec951d\output\AndroidManifest.xml:29:5-20
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:46:5-155:19
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\71924733ae029c910aa2111a8bd03f8c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\71924733ae029c910aa2111a8bd03f8c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b3c8b479c30363358dcc409970fc1367\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b3c8b479c30363358dcc409970fc1367\AndroidManifest.xml:26:5-20
+MERGED from [com.hannesdorfmann.mosby:viewstate:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\viewstate-2.0.1.aar\41ccd7c3b71a7581d05882b10248ad33\AndroidManifest.xml:11:5-20
+MERGED from [com.hannesdorfmann.mosby:viewstate:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\viewstate-2.0.1.aar\41ccd7c3b71a7581d05882b10248ad33\AndroidManifest.xml:11:5-20
+MERGED from [com.hannesdorfmann.mosby:mvp:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\mvp-2.0.1.aar\ff107e622f05d339ffde6ea37014ef53\AndroidManifest.xml:11:5-20
+MERGED from [com.hannesdorfmann.mosby:mvp:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\mvp-2.0.1.aar\ff107e622f05d339ffde6ea37014ef53\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\35cd014f33753ad4c5ed1857d16a142d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\35cd014f33753ad4c5ed1857d16a142d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\304846c9366e1977c49e5f44fdb5b986\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\304846c9366e1977c49e5f44fdb5b986\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\12c7c1a8cb8604558eea0c40d2659d6e\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\12c7c1a8cb8604558eea0c40d2659d6e\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\78d1ee999e0ddffa392c43a39f30536f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\78d1ee999e0ddffa392c43a39f30536f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\29d984fdfb27145eca740c08d5f724c4\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\29d984fdfb27145eca740c08d5f724c4\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\e145fbd69e9434e719259317691b742f\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\e145fbd69e9434e719259317691b742f\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\9e6cd1224651a54199e8e87ed49e2aa6\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\9e6cd1224651a54199e8e87ed49e2aa6\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\b1cd7e42085a87ecbd62a93ebfd6b0a2\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\b1cd7e42085a87ecbd62a93ebfd6b0a2\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\aff8db132cc621c907180f86f801f576\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\aff8db132cc621c907180f86f801f576\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3c75a78a6cfabfdc5e2dc0223688697d\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3c75a78a6cfabfdc5e2dc0223688697d\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\12ce49d060395fb5b2ee3a3787302ace\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\12ce49d060395fb5b2ee3a3787302ace\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:57:9-41
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:51:9-41
 	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:58:9-40
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:52:9-40
 	android:roundIcon
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:59:9-48
-	android:allowBackup
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:54:9-35
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:53:9-48
 	android:icon
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:56:9-43
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:50:9-43
+	android:allowBackup
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:48:9-35
 	android:description
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:55:9-54
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:49:9-54
 	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:60:9-40
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:54:9-40
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:53:9-59
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:47:9-59
 activity#com.vuforia.samples.MainApp.SplashScreen
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:80:9-91:20
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:72:9-83:20
 	android:screenOrientation
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:84:13-49
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:76:13-49
 	android:noHistory
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:83:13-37
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:75:13-37
 	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:82:13-93
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:74:13-93
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:81:13-68
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:73:13-68
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:85:13-89:29
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:77:13-81:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:86:17-69
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:78:17-69
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:86:25-66
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:78:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:88:17-77
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:80:17-77
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:88:27-74
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:80:27-74
 activity#com.vuforia.samples.MainApp.MainActivity
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:93:9-86
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:84:9-77
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:93:19-74
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:84:19-74
 activity#com.vuforia.samples.MainApp.ui.insects.InsectsActivity
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:94:9-91
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:85:9-91
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:94:19-88
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:85:19-88
 activity#com.vuforia.samples.MainApp.ui.insects.InsectDetail
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:95:9-97:47
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:86:9-88:47
 	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:97:13-44
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:88:13-44
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:96:13-79
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:87:13-79
 activity#com.vuforia.samples.MainApp.ui.diseases.DiseaseDetail
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:98:9-100:47
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:89:9-91:47
 	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:100:13-44
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:91:13-44
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:99:13-81
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:90:13-81
 activity#com.vuforia.samples.MainApp.ui.diseases.DiseasesActivity
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:101:9-93
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:92:9-93
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:101:19-90
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:92:19-90
 activity#com.vuforia.samples.MainApp.ui.cornFarming.CornFarmingActivity
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:102:9-99
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:93:9-99
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:102:19-96
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:93:19-96
 activity#com.vuforia.samples.MainApp.ui.cornFarming.details.CornFarmingDetailsActivity
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:103:9-114
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:94:9-114
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:103:19-111
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:94:19-111
 activity#com.vuforia.samples.VuforiaSamples.ui.ActivityList.ActivityLauncher
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:105:9-109:63
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:95:9-99:54
 	android:screenOrientation
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:108:13-49
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:98:13-49
 	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:107:13-93
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:97:13-93
 	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:109:13-51
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:99:13-51
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:106:13-61
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:96:13-61
 activity#com.vuforia.samples.VuforiaSamples.ui.ActivityList.AboutScreen
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:111:9-116:63
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:100:9-105:54
 	android:screenOrientation
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:115:13-49
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:104:13-49
 	android:noHistory
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:114:13-37
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:103:13-37
+	android:configChanges
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:102:13-93
+	android:theme
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:105:13-51
+	android:name
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:101:13-56
+activity#com.vuforia.samples.VuforiaSamples.app.ImageTargets.ImageTargets
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:106:9-110:54
+	android:launchMode
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:109:13-44
+	android:configChanges
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:108:13-93
+	android:theme
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:110:13-51
+	android:name
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:107:13-58
+activity#com.vuforia.samples.VuforiaSamples.app.VuMark.VuMark
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:111:9-115:54
+	android:launchMode
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:114:13-44
 	android:configChanges
 		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:113:13-93
 	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:116:13-51
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:115:13-51
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:112:13-56
-activity#com.vuforia.samples.VuforiaSamples.app.ImageTargets.ImageTargets
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:118:9-122:63
-	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:121:13-44
-	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:120:13-93
-	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:122:13-51
-	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:119:13-58
-activity#com.vuforia.samples.VuforiaSamples.app.VuMark.VuMark
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:124:9-128:63
-	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:127:13-44
-	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:126:13-93
-	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:128:13-51
-	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:125:13-46
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:112:13-46
 activity#com.vuforia.samples.VuforiaSamples.app.TextRecognition.TextReco
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:130:9-134:63
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:116:9-120:54
 	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:133:13-44
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:119:13-44
 	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:132:13-93
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:118:13-93
 	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:134:13-51
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:120:13-51
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:131:13-57
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:117:13-57
 activity#com.vuforia.samples.VuforiaSamples.app.CylinderTargets.CylinderTargets
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:136:9-140:63
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:121:9-125:54
+	android:launchMode
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:124:13-44
+	android:configChanges
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:123:13-93
+	android:theme
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:125:13-51
+	android:name
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:122:13-64
+activity#com.vuforia.samples.VuforiaSamples.app.VirtualButtons.VirtualButtons
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:126:9-130:54
+	android:launchMode
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:129:13-44
+	android:configChanges
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:128:13-93
+	android:theme
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:130:13-51
+	android:name
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:127:13-62
+activity#com.vuforia.samples.VuforiaSamples.app.UserDefinedTargets.UserDefinedTargets
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:131:9-135:54
+	android:launchMode
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:134:13-44
+	android:configChanges
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:133:13-93
+	android:theme
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:135:13-51
+	android:name
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:132:13-70
+activity#com.vuforia.samples.VuforiaSamples.app.MultiTargets.MultiTargets
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:136:9-140:54
 	android:launchMode
 		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:139:13-44
 	android:configChanges
@@ -183,103 +259,122 @@ ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:
 	android:theme
 		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:140:13-51
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:137:13-64
-activity#com.vuforia.samples.VuforiaSamples.app.VirtualButtons.VirtualButtons
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:142:9-146:63
-	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:145:13-44
-	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:144:13-93
-	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:146:13-51
-	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:143:13-62
-activity#com.vuforia.samples.VuforiaSamples.app.UserDefinedTargets.UserDefinedTargets
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:148:9-152:63
-	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:151:13-44
-	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:150:13-93
-	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:152:13-51
-	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:149:13-70
-activity#com.vuforia.samples.VuforiaSamples.app.MultiTargets.MultiTargets
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:154:9-158:63
-	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:157:13-44
-	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:156:13-93
-	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:158:13-51
-	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:155:13-58
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:137:13-58
 activity#com.vuforia.samples.VuforiaSamples.app.CloudRecognition.CloudReco
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:160:9-164:63
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:141:9-145:54
 	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:163:13-44
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:144:13-44
 	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:162:13-93
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:143:13-93
 	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:164:13-51
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:145:13-51
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:161:13-59
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:142:13-59
 activity#com.vuforia.samples.VuforiaSamples.app.ObjectRecognition.ObjectTargets
-ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:166:9-170:63
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:146:9-150:54
 	android:launchMode
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:169:13-44
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:149:13-44
 	android:configChanges
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:168:13-93
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:148:13-93
 	android:theme
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:170:13-51
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:150:13-51
 	android:name
-		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:167:13-64
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:147:13-64
+activity#com.vuforia.samples.MainApp.ResultActivity
+ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:151:9-154:61
+	android:label
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:153:13-58
+	android:theme
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:154:13-58
+	android:name
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml:152:13-70
 uses-sdk
 INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [io.realm:realm-android-library:3.3.2] C:\Users\Jansen\.android\build-cache\9eee8aecd066c883db002fed4507a63f8b6fd03b\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Jansen\.android\build-cache\761df041763101ad8eb8e8a947625bb283cf4e77\output\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.android\build-cache\3e97aa27651374f54e4bc3288cb19e7660045d94\output\AndroidManifest.xml:21:5-23:55
-MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.android\build-cache\986761d244a710aa64ce13d9a0990d994dab00bb\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.android\build-cache\29039adce8684ad334e2d4cd6c021383069d0a3a\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jansen\.android\build-cache\199a312195e1b45be5cef7370b04f53a3b2010db\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.android\build-cache\a835e9fadb60fdbd97cdab4dd5b8b1ed4beb753d\output\AndroidManifest.xml:20:5-43
-MERGED from [com.hannesdorfmann.mosby:viewstate:2.0.1] C:\Users\Jansen\.android\build-cache\163640583e42fa8367afe95ff4c91b9340a01fb7\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.hannesdorfmann.mosby:mvp:2.0.1] C:\Users\Jansen\.android\build-cache\8eece1ce1d3b9b762dcce58a9881b5a0f719d5a4\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.android\build-cache\e63937201ca0f0bf072faf57c1bf412fc00b853f\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.android\build-cache\0dde80aa4c270902d1821c9bbc7ac9b9db1f566b\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.android\build-cache\e78f1e27b9aad71cf6c1b4739eb6c1e469858ce2\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Jansen\.android\build-cache\6d06be6cc260a2204ee4ee5abf33af3d895451d7\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.databinding:library:1.3.1] C:\Users\Jansen\.android\build-cache\35c0774493ee47b5ec14535ff133c1f5df9c17a5\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.android\build-cache\86887203e919be5248d1de5282993f3f0cf2c260\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.android\build-cache\e7ef2bd6b489bbbfa0e5b749b1f2a3f5ef05f36a\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.android\build-cache\6fa51e9f69a179adeb040e122240200226c70580\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.android\build-cache\546863c60177e169be37ca458fd007515d0394ff\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.android\build-cache\974e69c50e1c1ad44fe84ec1dafef2036b3c6f9f\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.android\build-cache\dcf4956a04dc757ca616c26253795afffcec951d\output\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\57da9fdc731e956bfb34ec33e3158649\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\57da9fdc731e956bfb34ec33e3158649\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\1a5934e30c0dcb0d466b78a841e1b744\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\1a5934e30c0dcb0d466b78a841e1b744\AndroidManifest.xml:22:5-24:41
+MERGED from [io.realm:realm-android-library:3.3.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\realm-android-library-3.3.2.aar\31dccc13026ff2a59a89223fa0fe5ee5\AndroidManifest.xml:7:5-9:41
+MERGED from [io.realm:realm-android-library:3.3.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\realm-android-library-3.3.2.aar\31dccc13026ff2a59a89223fa0fe5ee5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\71924733ae029c910aa2111a8bd03f8c\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\71924733ae029c910aa2111a8bd03f8c\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b3c8b479c30363358dcc409970fc1367\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b3c8b479c30363358dcc409970fc1367\AndroidManifest.xml:20:5-44
+MERGED from [com.hannesdorfmann.mosby:viewstate:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\viewstate-2.0.1.aar\41ccd7c3b71a7581d05882b10248ad33\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hannesdorfmann.mosby:viewstate:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\viewstate-2.0.1.aar\41ccd7c3b71a7581d05882b10248ad33\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hannesdorfmann.mosby:mvp:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\mvp-2.0.1.aar\ff107e622f05d339ffde6ea37014ef53\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hannesdorfmann.mosby:mvp:2.0.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\mvp-2.0.1.aar\ff107e622f05d339ffde6ea37014ef53\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\35cd014f33753ad4c5ed1857d16a142d\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\35cd014f33753ad4c5ed1857d16a142d\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\304846c9366e1977c49e5f44fdb5b986\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\304846c9366e1977c49e5f44fdb5b986\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\08a360e503488bffc597abf2128c06e1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\08a360e503488bffc597abf2128c06e1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\12c7c1a8cb8604558eea0c40d2659d6e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\12c7c1a8cb8604558eea0c40d2659d6e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\78d1ee999e0ddffa392c43a39f30536f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\78d1ee999e0ddffa392c43a39f30536f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\7f73ae14eb135e55a5cb9b1f216b6e4c\AndroidManifest.xml:7:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\7f73ae14eb135e55a5cb9b1f216b6e4c\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\29d984fdfb27145eca740c08d5f724c4\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\29d984fdfb27145eca740c08d5f724c4\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\e145fbd69e9434e719259317691b742f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\e145fbd69e9434e719259317691b742f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\9e6cd1224651a54199e8e87ed49e2aa6\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\9e6cd1224651a54199e8e87ed49e2aa6\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\b1cd7e42085a87ecbd62a93ebfd6b0a2\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\b1cd7e42085a87ecbd62a93ebfd6b0a2\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\aff8db132cc621c907180f86f801f576\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\aff8db132cc621c907180f86f801f576\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3c75a78a6cfabfdc5e2dc0223688697d\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3c75a78a6cfabfdc5e2dc0223688697d\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\12ce49d060395fb5b2ee3a3787302ace\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\12ce49d060395fb5b2ee3a3787302ace\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.android\build-cache\3e97aa27651374f54e4bc3288cb19e7660045d94\output\AndroidManifest.xml:23:9-52
+		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
 		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Jansen\Desktop\CornPestApp\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.android\build-cache\3e97aa27651374f54e4bc3288cb19e7660045d94\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.android\build-cache\986761d244a710aa64ce13d9a0990d994dab00bb\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.android\build-cache\29039adce8684ad334e2d4cd6c021383069d0a3a\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jansen\.android\build-cache\199a312195e1b45be5cef7370b04f53a3b2010db\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.android\build-cache\a835e9fadb60fdbd97cdab4dd5b8b1ed4beb753d\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.android\build-cache\e63937201ca0f0bf072faf57c1bf412fc00b853f\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.android\build-cache\0dde80aa4c270902d1821c9bbc7ac9b9db1f566b\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.android\build-cache\e78f1e27b9aad71cf6c1b4739eb6c1e469858ce2\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.android\build-cache\86887203e919be5248d1de5282993f3f0cf2c260\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.android\build-cache\e7ef2bd6b489bbbfa0e5b749b1f2a3f5ef05f36a\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.android\build-cache\6fa51e9f69a179adeb040e122240200226c70580\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.android\build-cache\546863c60177e169be37ca458fd007515d0394ff\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.android\build-cache\974e69c50e1c1ad44fe84ec1dafef2036b3c6f9f\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.android\build-cache\dcf4956a04dc757ca616c26253795afffcec951d\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\71924733ae029c910aa2111a8bd03f8c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\71924733ae029c910aa2111a8bd03f8c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b3c8b479c30363358dcc409970fc1367\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b3c8b479c30363358dcc409970fc1367\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\35cd014f33753ad4c5ed1857d16a142d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\35cd014f33753ad4c5ed1857d16a142d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\304846c9366e1977c49e5f44fdb5b986\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\304846c9366e1977c49e5f44fdb5b986\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\08a360e503488bffc597abf2128c06e1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\08a360e503488bffc597abf2128c06e1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\12c7c1a8cb8604558eea0c40d2659d6e\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.3.1.aar\12c7c1a8cb8604558eea0c40d2659d6e\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\29d984fdfb27145eca740c08d5f724c4\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\29d984fdfb27145eca740c08d5f724c4\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\e145fbd69e9434e719259317691b742f\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\e145fbd69e9434e719259317691b742f\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\9e6cd1224651a54199e8e87ed49e2aa6\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\9e6cd1224651a54199e8e87ed49e2aa6\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\b1cd7e42085a87ecbd62a93ebfd6b0a2\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\b1cd7e42085a87ecbd62a93ebfd6b0a2\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\aff8db132cc621c907180f86f801f576\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\aff8db132cc621c907180f86f801f576\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3c75a78a6cfabfdc5e2dc0223688697d\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3c75a78a6cfabfdc5e2dc0223688697d\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\12ce49d060395fb5b2ee3a3787302ace\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\12ce49d060395fb5b2ee3a3787302ace\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.android\build-cache\3e97aa27651374f54e4bc3288cb19e7660045d94\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.android\build-cache\3e97aa27651374f54e4bc3288cb19e7660045d94\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:support-v13:25.3.1] C:\Users\Jansen\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\99a8ce881ba7dfb0375a1420a485a741\AndroidManifest.xml:26:9-47

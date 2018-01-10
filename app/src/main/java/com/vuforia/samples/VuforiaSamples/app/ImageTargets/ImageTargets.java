@@ -41,10 +41,9 @@ import com.vuforia.Trackable;
 import com.vuforia.Tracker;
 import com.vuforia.TrackerManager;
 import com.vuforia.Vuforia;
+import com.vuforia.samples.MainApp.ResultActivity;
 import com.vuforia.samples.MainApp.app.Constant;
 import com.vuforia.samples.MainApp.app.RealmQuery;
-import com.vuforia.samples.MainApp.ui.diseases.DiseaseDetail;
-import com.vuforia.samples.MainApp.ui.insects.InsectDetail;
 import com.vuforia.samples.SampleApplication.SampleApplicationControl;
 import com.vuforia.samples.SampleApplication.SampleApplicationException;
 import com.vuforia.samples.SampleApplication.SampleApplicationSession;
@@ -128,37 +127,36 @@ public class ImageTargets extends Activity implements SampleApplicationControl,
 
     }
 
+
+    //TODO Method Name
     public void toast(Trackable trackable) {
         Log.e("ANO", trackable.getName());
         if (RealmQuery.disease(trackable.getName()) != null) {
             Log.e("FOUND", trackable.getName());
-            Intent i = new Intent(this, DiseaseDetail.class);
+            Intent i = new Intent(this, ResultActivity.class);
             i.putExtra(Constant.ID, RealmQuery.disease(trackable.getName()).getId());
+            i.putExtra(Constant.TYPE, "disease");
             startActivity(i);
-            /*
-            DialogResultBinding binding = DataBindingUtil.inflate(getLayoutInflater(),
-                    R.layout.dialog_result,
-                    null,false);
-            binding.resultName.setText(RealmQuery.disease(trackable.getName()).getDisName());
-            Dialog dialog = new Dialog(this);
-            dialog.setContentView(binding.getRoot());
-            dialog.show();*/
         } else if (RealmQuery.insect(trackable.getName()) != null) {
             Log.e("FOUND", trackable.getName());
-            Intent i = new Intent(this, InsectDetail.class);
+            Intent i = new Intent(this, ResultActivity.class);
             i.putExtra(Constant.ID, RealmQuery.insect(trackable.getName()).getId());
+            i.putExtra(Constant.TYPE, "insect");
             startActivity(i);
-            /*DialogResultBinding binding = DataBindingUtil.inflate(getLayoutInflater(),
-                    R.layout.dialog_result,
-                    null,
-                    false);
-            binding.resultName.setText(RealmQuery.insect(trackable.getName()).getInsectName());
-            Dialog dialog = new Dialog(this);
-            dialog.setContentView(binding.getRoot());
-            dialog.show();*/
         }
     }
 
+    /*void showDialog(){
+        DialogResultBinding binding = DataBindingUtil.inflate(getLayoutInflater(),
+                R.layout.dialog_result,
+                null,
+                false);
+        //binding.resultName.setText(RealmQuery.insect(trackable.getName()).getInsectName());
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(binding.getRoot());
+        dialog.show();
+    }
+*/
     // Process Single Tap event to trigger autofocus
     private class GestureListener extends
             GestureDetector.SimpleOnGestureListener {

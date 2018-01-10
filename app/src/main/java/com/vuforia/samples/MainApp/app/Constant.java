@@ -8,6 +8,7 @@ package com.vuforia.samples.MainApp.app;
 
 public class Constant {
     public static final String ID = "id";
+    public static final String TYPE = "type";
 
     public static final String DETAIL_TYPE_TEXT = "text";
     public static final String DETAIL_TYPE_IMAGE = "image";
