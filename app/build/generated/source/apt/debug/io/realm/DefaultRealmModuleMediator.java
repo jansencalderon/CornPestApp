@@ -27,10 +27,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     private static final Set<Class<? extends RealmModel>> MODEL_CLASSES;
     static {
         Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>();
-        modelClasses.add(com.vuforia.samples.MainApp.model.Insect.class);
         modelClasses.add(com.vuforia.samples.MainApp.model.CornFarmingDetail.class);
-        modelClasses.add(com.vuforia.samples.MainApp.model.Disease.class);
         modelClasses.add(com.vuforia.samples.MainApp.model.CornFarming.class);
+        modelClasses.add(com.vuforia.samples.MainApp.model.Disease.class);
+        modelClasses.add(com.vuforia.samples.MainApp.model.Insect.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
 
@@ -38,17 +38,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public RealmObjectSchema createRealmObjectSchema(Class<? extends RealmModel> clazz, RealmSchema realmSchema) {
         checkClass(clazz);
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            return io.realm.InsectRealmProxy.createRealmObjectSchema(realmSchema);
-        }
         if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             return io.realm.CornFarmingDetailRealmProxy.createRealmObjectSchema(realmSchema);
+        }
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+            return io.realm.CornFarmingRealmProxy.createRealmObjectSchema(realmSchema);
         }
         if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
             return io.realm.DiseaseRealmProxy.createRealmObjectSchema(realmSchema);
         }
-        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-            return io.realm.CornFarmingRealmProxy.createRealmObjectSchema(realmSchema);
+        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            return io.realm.InsectRealmProxy.createRealmObjectSchema(realmSchema);
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -57,17 +57,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public ColumnInfo validateTable(Class<? extends RealmModel> clazz, SharedRealm sharedRealm, boolean allowExtraColumns) {
         checkClass(clazz);
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            return io.realm.InsectRealmProxy.validateTable(sharedRealm, allowExtraColumns);
-        }
         if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             return io.realm.CornFarmingDetailRealmProxy.validateTable(sharedRealm, allowExtraColumns);
+        }
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+            return io.realm.CornFarmingRealmProxy.validateTable(sharedRealm, allowExtraColumns);
         }
         if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
             return io.realm.DiseaseRealmProxy.validateTable(sharedRealm, allowExtraColumns);
         }
-        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-            return io.realm.CornFarmingRealmProxy.validateTable(sharedRealm, allowExtraColumns);
+        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            return io.realm.InsectRealmProxy.validateTable(sharedRealm, allowExtraColumns);
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -76,17 +76,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public List<String> getFieldNames(Class<? extends RealmModel> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            return io.realm.InsectRealmProxy.getFieldNames();
-        }
         if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             return io.realm.CornFarmingDetailRealmProxy.getFieldNames();
+        }
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+            return io.realm.CornFarmingRealmProxy.getFieldNames();
         }
         if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
             return io.realm.DiseaseRealmProxy.getFieldNames();
         }
-        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-            return io.realm.CornFarmingRealmProxy.getFieldNames();
+        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            return io.realm.InsectRealmProxy.getFieldNames();
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -95,17 +95,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public String getTableName(Class<? extends RealmModel> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            return io.realm.InsectRealmProxy.getTableName();
-        }
         if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             return io.realm.CornFarmingDetailRealmProxy.getTableName();
+        }
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+            return io.realm.CornFarmingRealmProxy.getTableName();
         }
         if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
             return io.realm.DiseaseRealmProxy.getTableName();
         }
-        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-            return io.realm.CornFarmingRealmProxy.getTableName();
+        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            return io.realm.InsectRealmProxy.getTableName();
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -117,17 +117,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             objectContext.set((BaseRealm) baseRealm, row, columnInfo, acceptDefaultValue, excludeFields);
             checkClass(clazz);
 
-            if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-                return clazz.cast(new io.realm.InsectRealmProxy());
-            }
             if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
                 return clazz.cast(new io.realm.CornFarmingDetailRealmProxy());
+            }
+            if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+                return clazz.cast(new io.realm.CornFarmingRealmProxy());
             }
             if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
                 return clazz.cast(new io.realm.DiseaseRealmProxy());
             }
-            if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-                return clazz.cast(new io.realm.CornFarmingRealmProxy());
+            if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+                return clazz.cast(new io.realm.InsectRealmProxy());
             }
             throw getMissingProxyClassException(clazz);
         } finally {
@@ -146,17 +146,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            return clazz.cast(io.realm.InsectRealmProxy.copyOrUpdate(realm, (com.vuforia.samples.MainApp.model.Insect) obj, update, cache));
-        }
         if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             return clazz.cast(io.realm.CornFarmingDetailRealmProxy.copyOrUpdate(realm, (com.vuforia.samples.MainApp.model.CornFarmingDetail) obj, update, cache));
+        }
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+            return clazz.cast(io.realm.CornFarmingRealmProxy.copyOrUpdate(realm, (com.vuforia.samples.MainApp.model.CornFarming) obj, update, cache));
         }
         if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
             return clazz.cast(io.realm.DiseaseRealmProxy.copyOrUpdate(realm, (com.vuforia.samples.MainApp.model.Disease) obj, update, cache));
         }
-        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-            return clazz.cast(io.realm.CornFarmingRealmProxy.copyOrUpdate(realm, (com.vuforia.samples.MainApp.model.CornFarming) obj, update, cache));
+        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            return clazz.cast(io.realm.InsectRealmProxy.copyOrUpdate(realm, (com.vuforia.samples.MainApp.model.Insect) obj, update, cache));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -167,14 +167,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            io.realm.InsectRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.Insect) object, cache);
-        } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             io.realm.CornFarmingDetailRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.CornFarmingDetail) object, cache);
-        } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
-            io.realm.DiseaseRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.Disease) object, cache);
         } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
             io.realm.CornFarmingRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.CornFarming) object, cache);
+        } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
+            io.realm.DiseaseRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.Disease) object, cache);
+        } else if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            io.realm.InsectRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.Insect) object, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -192,26 +192,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-                io.realm.InsectRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.Insect) object, cache);
-            } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
+            if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
                 io.realm.CornFarmingDetailRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.CornFarmingDetail) object, cache);
-            } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
-                io.realm.DiseaseRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.Disease) object, cache);
             } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
                 io.realm.CornFarmingRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.CornFarming) object, cache);
+            } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
+                io.realm.DiseaseRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.Disease) object, cache);
+            } else if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+                io.realm.InsectRealmProxy.insert(realm, (com.vuforia.samples.MainApp.model.Insect) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-                    io.realm.InsectRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
+                if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
                     io.realm.CornFarmingDetailRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
-                    io.realm.DiseaseRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
                     io.realm.CornFarmingRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
+                    io.realm.DiseaseRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+                    io.realm.InsectRealmProxy.insert(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -225,14 +225,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            io.realm.InsectRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.Insect) obj, cache);
-        } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             io.realm.CornFarmingDetailRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.CornFarmingDetail) obj, cache);
-        } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
-            io.realm.DiseaseRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.Disease) obj, cache);
         } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
             io.realm.CornFarmingRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.CornFarming) obj, cache);
+        } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
+            io.realm.DiseaseRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.Disease) obj, cache);
+        } else if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            io.realm.InsectRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.Insect) obj, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -250,26 +250,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-                io.realm.InsectRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.Insect) object, cache);
-            } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
+            if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
                 io.realm.CornFarmingDetailRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.CornFarmingDetail) object, cache);
-            } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
-                io.realm.DiseaseRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.Disease) object, cache);
             } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
                 io.realm.CornFarmingRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.CornFarming) object, cache);
+            } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
+                io.realm.DiseaseRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.Disease) object, cache);
+            } else if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+                io.realm.InsectRealmProxy.insertOrUpdate(realm, (com.vuforia.samples.MainApp.model.Insect) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-                    io.realm.InsectRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
+                if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
                     io.realm.CornFarmingDetailRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
-                    io.realm.DiseaseRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
                     io.realm.CornFarmingRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
+                    io.realm.DiseaseRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+                    io.realm.InsectRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -282,17 +282,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws JSONException {
         checkClass(clazz);
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            return clazz.cast(io.realm.InsectRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
-        }
         if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             return clazz.cast(io.realm.CornFarmingDetailRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        }
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+            return clazz.cast(io.realm.CornFarmingRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
             return clazz.cast(io.realm.DiseaseRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-            return clazz.cast(io.realm.CornFarmingRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            return clazz.cast(io.realm.InsectRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -302,17 +302,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws IOException {
         checkClass(clazz);
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            return clazz.cast(io.realm.InsectRealmProxy.createUsingJsonStream(realm, reader));
-        }
         if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             return clazz.cast(io.realm.CornFarmingDetailRealmProxy.createUsingJsonStream(realm, reader));
+        }
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+            return clazz.cast(io.realm.CornFarmingRealmProxy.createUsingJsonStream(realm, reader));
         }
         if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
             return clazz.cast(io.realm.DiseaseRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-            return clazz.cast(io.realm.CornFarmingRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            return clazz.cast(io.realm.InsectRealmProxy.createUsingJsonStream(realm, reader));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -323,17 +323,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) realmObject.getClass().getSuperclass();
 
-        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
-            return clazz.cast(io.realm.InsectRealmProxy.createDetachedCopy((com.vuforia.samples.MainApp.model.Insect) realmObject, 0, maxDepth, cache));
-        }
         if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarmingDetail.class)) {
             return clazz.cast(io.realm.CornFarmingDetailRealmProxy.createDetachedCopy((com.vuforia.samples.MainApp.model.CornFarmingDetail) realmObject, 0, maxDepth, cache));
+        }
+        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
+            return clazz.cast(io.realm.CornFarmingRealmProxy.createDetachedCopy((com.vuforia.samples.MainApp.model.CornFarming) realmObject, 0, maxDepth, cache));
         }
         if (clazz.equals(com.vuforia.samples.MainApp.model.Disease.class)) {
             return clazz.cast(io.realm.DiseaseRealmProxy.createDetachedCopy((com.vuforia.samples.MainApp.model.Disease) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.vuforia.samples.MainApp.model.CornFarming.class)) {
-            return clazz.cast(io.realm.CornFarmingRealmProxy.createDetachedCopy((com.vuforia.samples.MainApp.model.CornFarming) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.vuforia.samples.MainApp.model.Insect.class)) {
+            return clazz.cast(io.realm.InsectRealmProxy.createDetachedCopy((com.vuforia.samples.MainApp.model.Insect) realmObject, 0, maxDepth, cache));
         }
         throw getMissingProxyClassException(clazz);
     }

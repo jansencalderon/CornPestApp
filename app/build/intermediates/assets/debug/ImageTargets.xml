@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="leaf_spot2" size="10.000000 5.100000" />
+    <ImageTarget name="leaf_spot" size="10.000000 7.500000" />
+    <ImageTarget name="leaf_rust2" size="10.000000 6.666667" />
+    <ImageTarget name="leaf_rust" size="10.000000 6.690000" />
+    <ImageTarget name="downy_mildew2" size="10.000000 7.312500" />
+    <ImageTarget name="downy_mildew" size="10.000000 13.328125" />
+    <ImageTarget name="corn_mosaic2" size="10.000000 7.905138" />
+    <ImageTarget name="corn_mosaic" size="10.000000 6.894531" />
+    <ImageTarget name="banded_leaf2" size="10.000000 10.502283" />
+    <ImageTarget name="banded_leaf" size="10.000000 13.333333" />
+    <ImageTarget name="bacterial_stalk_rot2" size="10.000000 13.175231" />
+    <ImageTarget name="bacterial_stalk_rot" size="10.000000 15.029354" />
+    <ImageTarget name="white_grub" size="10.000000 6.766667" />
+    <ImageTarget name="seed_corn_maggot" size="10.000000 8.666667" />
+    <ImageTarget name="corn_aphid" size="10.000000 8.375000" />
     <ImageTarget name="white_grub2" size="10.000000 6.647059" />
     <ImageTarget name="semi_looper2" size="10.000000 6.630553" />
     <ImageTarget name="seed_corn_maggot2" size="10.000000 7.764901" />
@@ -18,7 +33,6 @@
     <ImageTarget name="corn_borer2" size="10.000000 6.656250" />
     <ImageTarget name="corn_borer" size="10.000000 6.588542" />
     <ImageTarget name="corn_aphid2" size="10.000000 7.700000" />
-    <ImageTarget name="corn_amphid" size="10.000000 8.375000" />
     <ImageTarget name="common_cutworm2" size="10.000000 7.341177" />
     <ImageTarget name="common_cutworm" size="10.000000 4.996610" />
     <ImageTarget name="black_cutworm2" size="10.000000 5.000000" />
@@ -26,8 +40,6 @@
     <ImageTarget name="army_worm2" size="10.000000 5.666667" />
     <ImageTarget name="army_worm1" size="10.000000 6.316667" />
     <ImageTarget name="army_worm" size="10.000000 7.500000" />
-    <ImageTarget name="sample2" size="1000.000000 1333.333374" />
     <ImageTarget name="sample1" size="1000.000000 1452.344971" />
-    <ImageTarget name="wew" size="100.000000 97.051598" />
   </Tracking>
 </QCARConfig>

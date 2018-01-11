@@ -6,7 +6,7 @@
     "disManagement": "Plant resistant varieties to help reduce occurrence of the disease.",
     "disSymptoms": "Presence of lesions that vary from small to large elongated or oval tan to brown spots. Under favorable conditions, these lesions coalesce completely burning large areas of the leaves.",
     "disImage": "leaf_spot.jpg",
-    "imageRecognition": "leaf_spot"
+    "imageRecognition": "leaf_spot.jpg,leaf_spot2.jpg"
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "disDesc": "This disease is caused by bacterium Erwinia carotovora which effects corn plants from two-leaf to maturity stages.",
     "disManagement": "Provide good drainage and improve soil condition through proper cultivation. Practice balanced fertilization. Generally, bacterial stalk rot is severe when there is excessive niitrogen in the soil in relation to potassium.",
     "disSymptoms": "Symptoms of this disease are: Stalk rot starting from the base progessing upward and and eventually causing wilting of lowermost leaves; Infected inner tissues of older palnts deteriorate and become soft with foul odor and later dry up into disjointed fibers; Plants infected before tasseling usually topple over while those infected at post tasseling will remain standing but exhibit wilted leaves.",
-    "disImage": "stalkrot.jpg",
-    "imageRecognition": "stalk_rot"
+    "disImage": "bacterial_stalk_rot.jpg",
+    "imageRecognition": "bacterial_stalk_rot.jpg,bacterial_stalk_rot2.jpg"
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "disDesc": "This disease is caused by bacterium Erwinia carotovora which effects corn plants from two-leaf to maturity stages.",
     "disManagement": "Follow a well balanced fertility program based on soil analysis. Avoid injuring corn plants during cultivation. Plant resistant varieties.",
     "disSymptoms": "Symptoms of this disease are: Gall on aboveground parts, which are glistening white or grayish white tissues; These galls later turn back due to masses of powdery black spores.",
-    "disImage": "corn_smut.jpg",
-    "imageRecognition": "corn_smut"
+    "disImage": "corn_smot.jpg",
+    "imageRecognition": "corn_smot.jpg,corn_smut2.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "disManagement": "Plant resistant varieties to help reduce occurrence of the disease.",
     "disSymptoms": "Presence of small circular brown rusty pustules or blisters on the upper and lower surfaces of a leaf. This pustules are rough to touch and later erupt and release numerous rusty spores.",
     "disImage": "leaf_rust.jpg",
-    "imageRecognition": "leaf_rust"
+    "imageRecognition": "leaf_rust.jpg,leaf_rust2.jpg"
   },
   {
     "id": 5,
@@ -41,8 +41,8 @@
     "disDesc": "This disease is caused by the soil-borne fungus Rhizoctonia solani, which affects corn plants from late whorl to ear formation.",
     "disManagement": "Practice sanitation by removing and burning infected leaves and stalks. Bury the sclerotia by deep plowing. Avoid planting varieties with very low ear placement.",
     "disSymptoms": "Irregular blotches on the leaves, stalks and ears; Blotches are grayish-green, with blueish-gray or straw colored centers and with distinct brown borders; Presence of irregular light to dark brown fungus lumps known as sclerotia on the dead tissues; Infected ears may be wholly or partially rotten showing some seed germination.",
-    "disImage": "Banded_leaf.jpg",
-    "imageRecognition": "banded_leaf"
+    "disImage": "banded_leaf.jpg",
+    "imageRecognition": "banded_leaf.jpg,banded_leaf2.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "disManagement": "Plant resistant varieties. Remove infected plants as symptoms appear. Eliminate alternate hosts like weeds. Plant early to avoid high aphid population.",
     "disSymptoms": "Narrow pale, yellow streaks on leaves parallel to leaf vain; The pale area later becomes diffused upon a paler green background; The base of infected leaves produces alternating broad streaks of green and pale green areas.",
     "disImage": "corn_mosaic.jpg",
-    "imageRecognition": "corn_mosaic"
+    "imageRecognition": "corn_mosaic.jpg,corn_mosaic2.jpg"
   },
   {
     "id": 7,
@@ -59,7 +59,7 @@
     "disDesc": "This disease is caused by a fungus, Peronosclerospora philippinen sis, which affects corn plants from two-leaf to silking stages.",
     "disManagement": "Sanitation involving the pulling out and burning infected plants as soon as they are observed in the cornfield. Synchronous planting. Crop rotation. Planting of resistant varieties.",
     "disSymptoms": "White or yellow streaks, first at the base then on the entire leaf blade; Chlorosis (loss of greeness due to luck of chlorophyll); Dwarfing; Ears and tassels poorly formed in severe infections.",
-    "disImage": "downey_mildew.jpg",
-    "imageRecognition": "downey_mildew"
+    "disImage": "downy_mildew.jpg",
+    "imageRecognition": "downy_mildew.jpg,downy_mildew2.jpg"
   }
 ]
