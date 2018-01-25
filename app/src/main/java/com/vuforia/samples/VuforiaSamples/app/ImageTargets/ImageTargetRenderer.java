@@ -13,7 +13,6 @@ import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.vuforia.Device;
 import com.vuforia.Matrix44F;
@@ -293,8 +292,8 @@ public class ImageTargetRenderer implements GLSurfaceView.Renderer, SampleAppRen
     {
         String userData = (String) trackable.getUserData();
         Log.d(LOGTAG, "UserData:Retreived User Data	\"" + userData + "\"");
-        Toast.makeText(mActivity, trackable.getName().toString(), Toast.LENGTH_SHORT).show();
-        Toast.makeText(mActivity,"TOAST", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mActivity, trackable.getName().toString(), Toast.LENGTH_SHORT).show();
+ //       Toast.makeText(mActivity,"TOAST", Toast.LENGTH_SHORT).show();
     }
     
     
